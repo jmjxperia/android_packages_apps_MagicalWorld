@@ -37,6 +37,13 @@
         android:entryValues="@array/quick_pulldown_values"
         android:persistent="false" />
 
+    <ListPreference
+        android:key="smart_pulldown"
+        android:title="@string/smart_pulldown_title"
+        android:entries="@array/smart_pulldown_entries"
+        android:entryValues="@array/smart_pulldown_values"
+        android:persistent="false" />
+
     <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"

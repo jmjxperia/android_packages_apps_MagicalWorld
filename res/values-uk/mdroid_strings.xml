@@ -588,4 +588,13 @@
     <string name="show_fourg_icon_title">Значок 4G</string>
     <string name="show_fourg_icon_summary">Відображати значок 4G біля індикатора мережі, замість LTE</string>
 
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Розумний доступ</string>
+    <string name="smart_pulldown_summary">Відкривати швидкі налаштування %1$s сповіщень</string>
+    <string name="smart_pulldown_none_summary">Відкривати швидкі налаштування коли немає сповіщень</string>
+    <string name="smart_pulldown_off">Вимкнено</string>
+    <string name="smart_pulldown_none">без сповіщень</string>
+    <string name="smart_pulldown_dismissable">без тих, що видаляються</string>
+    <string name="smart_pulldown_ongoing">без постійних</string>
+
 </resources>
