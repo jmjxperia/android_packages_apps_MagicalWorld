@@ -600,6 +600,10 @@
     <string name="force_expanded_settings_title">Expand settings</string>
     <string name="force_expanded_settings_summary">Expand all menu entries in settings by default</string>
 
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+
 </resources>
 
 

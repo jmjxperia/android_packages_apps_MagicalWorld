@@ -600,4 +600,8 @@
     <string name="force_expanded_settings_title">Разворачивать настройки</string>
     <string name="force_expanded_settings_summary">По умолчанию разворачивать все пункты настроек</string>
 
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Вибрация при касании</string>
+    <string name="quick_settings_vibrate_summary">Вибрировать при касании плиток</string>
+
 </resources>

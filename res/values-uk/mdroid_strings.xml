@@ -600,4 +600,8 @@
     <string name="force_expanded_settings_title">Розгортати налаштування</string>
     <string name="force_expanded_settings_summary">За замовчуванням розгортати всі пункти налаштувань</string>
 
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Вібрація при дотиках</string>
+    <string name="quick_settings_vibrate_summary">Вібрувати при натисканнях на плитки</string>
+
 </resources>
