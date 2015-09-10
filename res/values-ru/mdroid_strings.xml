@@ -624,4 +624,10 @@
     <string name="toast_icon_title">Иконки на всплывающих уведомлениях</string>
     <string name="toast_icon_summary">Показывать иконки приложений на всплывающих уведомлениях</string>
 
+    <!-- On-The-Go -->
+    <string name="onthego_title">Режим \"На ходу\"</string>
+    <string name="global_actions_onthego_title">На ходу</string>
+    <string name="onthego_alpha_title">\"На ходу\" прозрачность</string>
+    <string name="onthego_alpha_summary">Значение прозрачности</string>
+
 </resources>
