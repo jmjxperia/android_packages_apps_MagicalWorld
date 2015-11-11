@@ -301,4 +301,13 @@
     <string name="fprint_sucess_vib_title">Вибрация при распознавании отпечатка пальцев</string>
     <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальцев</string>
 
+    <!-- Quick pull down-->
+    <string name="quick_pulldown_title">Быстрый доступ</string>
+    <string name="quick_pulldown_summary">Движение %1$s открывает переключатели</string>
+    <string name="quick_pulldown_summary_always">Всегда вытягивать быстрые настройки</string>
+    <string name="quick_pulldown_off">Выкл</string>
+    <string name="quick_pulldown_left">Слева</string>
+    <string name="quick_pulldown_right">Справа</string>
+    <string name="quick_pulldown_always">Всегда</string>
+
 </resources>

@@ -301,4 +301,13 @@
     <string name="fprint_sucess_vib_title">Вібрація при розпізнаванні відбитку пальця</string>
     <string name="fprint_sucess_vib_summary">Вібрувати при успішному розпізнаванні відбитку пальця</string>
 
+    <!-- Quick pull down-->
+    <string name="quick_pulldown_title">Швидкий доступ</string>
+    <string name="quick_pulldown_summary">%1$s край рядку стану при опусканні вниз відкриває панель швидких налаштувань</string>
+    <string name="quick_pulldown_summary_always">Завжди витягати швидкі налаштування</string>
+    <string name="quick_pulldown_off">Вимк</string>
+    <string name="quick_pulldown_left">Лівий</string>
+    <string name="quick_pulldown_right">Правий</string>
+    <string name="quick_pulldown_always">Завжди</string>
+
 </resources>
