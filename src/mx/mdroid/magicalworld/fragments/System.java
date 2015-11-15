@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
@@ -29,6 +30,9 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
+
+import java.util.Arrays;
+import java.util.HashSet;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -40,8 +44,14 @@ public class System extends SettingsPreferenceFragment implements
     private static final String TAG = "System";
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
+
+    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
+    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+    private static final String SCROLLINGCACHE_DEFAULT = "1";
+
     private ListPreference mScreenOffAnimation;
     private ListPreference mHeadsetRingtoneFocus;
+    private ListPreference mScrollingCachePref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,6 +74,11 @@ public class System extends SettingsPreferenceFragment implements
         mHeadsetRingtoneFocus.setValue(Integer.toString(mHeadsetRingtoneFocusValue));
         mHeadsetRingtoneFocus.setSummary(mHeadsetRingtoneFocus.getEntry());
         mHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
+
+        mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
+                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+        mScrollingCachePref.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -99,6 +114,11 @@ public class System extends SettingsPreferenceFragment implements
                     mHeadsetRingtoneFocus.getEntries()[index]);
             Settings.Global.putInt(resolver, Settings.Global.RINGTONE_FOCUS_MODE,
                     mHeadsetRingtoneFocusValue);
+            return true;
+        } else if (preference == mScrollingCachePref) {
+            if (objValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) objValue);
+            }
             return true;
         }
         return false;

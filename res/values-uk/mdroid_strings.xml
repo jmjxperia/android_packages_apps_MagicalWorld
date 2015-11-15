@@ -604,4 +604,12 @@
     <string name="quick_settings_vibrate_title">Вібрація при дотиках</string>
     <string name="quick_settings_vibrate_summary">Вібрувати при натисканнях на плитки</string>
 
+    <!-- Option to enable/disable scrolling cache -->
+    <string name="pref_scrollingcache_title">Кеш прокрутки</string>
+    <string name="pref_scrollingcache_summary">Вимкнення кешу прокрутки може поліпшити продуктивність за рахунок пам\'яті</string>
+    <string name="pref_scrollingcache_force_enable">Увімкнути примусово</string>
+    <string name="pref_scrollingcache_default_enable">Увімкнути за замовчуванням</string>
+    <string name="pref_scrollingcache_default_disable">Вимкнути за замовчуванням</string>
+    <string name="pref_scrollingcache_force_disable">Вимкнути примусово</string>
+
 </resources>
