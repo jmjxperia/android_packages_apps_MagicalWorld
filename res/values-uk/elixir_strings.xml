@@ -325,4 +325,8 @@
     <string name="qs_brightness_slider_title">Регулятор яскравості</string>
     <string name="qs_brightness_slider_summary">Показати регулятор яркости в панелі швидких налаштувань</string>
 
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Значок яскравості</string>
+    <string name="brightness_icon_summary">Показати значок ввімкнення автояскравості праворуч від регулятора</string>
+
 </resources>
