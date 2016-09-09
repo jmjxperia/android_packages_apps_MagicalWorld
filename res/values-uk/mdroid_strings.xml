@@ -620,4 +620,8 @@
     <string name="chooser_activity_blacklist_pref_title">Додати додаток</string>
     <string name="chooser_activity_blacklist_pref_summary">Натисніть тут, щоб додати, або натисніть на доданий додаток, щоб видалити його</string>
 
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Іконки на виринаючих сповіщеннях</string>
+    <string name="toast_icon_summary">Показувати іконки додатків на виринаючих сповіщеннях</string>
+
 </resources>

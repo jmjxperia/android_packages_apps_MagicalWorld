@@ -620,4 +620,8 @@
     <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
     <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить его</string>
 
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Иконки на всплывающих уведомлениях</string>
+    <string name="toast_icon_summary">Показывать иконки приложений на всплывающих уведомлениях</string>
+
 </resources>
