@@ -53,4 +53,10 @@
         android:summary="@string/fprint_sucess_vib_summary"
         android:defaultValue="true" />
 
+    <com.android.settings.elixir.SecureSettingSwitchPreference
+        android:key="lockscreen_visualizer"
+        android:title="@string/lockscreen_visualizer_title"
+        android:summary="@string/lockscreen_visualizer_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>

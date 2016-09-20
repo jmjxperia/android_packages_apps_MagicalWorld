@@ -330,4 +330,8 @@
     <string name="brightness_icon_title">Значок яскравості</string>
     <string name="brightness_icon_summary">Показати значок ввімкнення автояскравості праворуч від регулятора</string>
 
+    <!-- Lockscreen visualizer -->
+    <string name="lockscreen_visualizer_title">Візуалізатор музики</string>
+    <string name="lockscreen_visualizer_summary">Відображення візуалізатора на екрані блокування під час відтворення музики</string>
+
 </resources>
