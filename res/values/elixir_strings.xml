@@ -27,9 +27,6 @@
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Statusbar items</string>
 
-    <!-- Navbar tuner -->
-    <string name="navbar_tuner_title">Navbar buttons</string>
-
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
@@ -309,6 +306,16 @@
     <string name="quick_pulldown_left">Left</string>
     <string name="quick_pulldown_right">Right</string>
     <string name="quick_pulldown_always">Always</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_category">Navigation Bar</string>
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar buttons</string>
+    <!-- Navigation bar arrow keys -->
+    <string name="show_navbar_arrow_keys_title">Show arrow keys while typing</string>
+    <string name="show_navbar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing.</string>
+
+    <string name="volume_and_power_buttons_category">Volume and Power buttons</string>
 
 </resources>
 

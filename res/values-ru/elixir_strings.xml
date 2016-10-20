@@ -27,9 +27,6 @@
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Редактирование иконок</string>
 
-    <!-- Navbar tuner -->
-    <string name="navbar_tuner_title">Панель навигации</string>
-
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Сброс</string>
@@ -309,5 +306,15 @@
     <string name="quick_pulldown_left">Слева</string>
     <string name="quick_pulldown_right">Справа</string>
     <string name="quick_pulldown_always">Всегда</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_category">Панель навигации</string>
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Кнопки панели навигации</string>
+    <!-- Navigation bar arrow keys -->
+    <string name="show_navbar_arrow_keys_title">Показывать стрелки при вводе текста</string>
+    <string name="show_navbar_arrow_keys_summary">Отображать кнопки перемещения курсора влево или вправо на панели навигации при вводе текста.</string>
+
+    <string name="volume_and_power_buttons_category">Кнопки громкости и питания</string>
 
 </resources>
