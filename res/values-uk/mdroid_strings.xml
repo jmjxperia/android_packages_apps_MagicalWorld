@@ -509,4 +509,14 @@
     <string name="notification_guts_kill_app_button_title">Кнопка закриття додатка</string>
     <string name="notification_guts_kill_app_button_summary">Відображати кнопку закриття додатка в сповіщеннях при довгому натисканні</string>
 
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Тривалість</string>
+    <string name="heads_up_time_out_summary">Повідомлення буде показуватися <xliff:g id="number">%d</xliff:g> секунд(и)</string>
+    <string name="heads_up_time_out_2sec">2 секунди</string>
+    <string name="heads_up_time_out_4sec">4 секунди</string>
+    <string name="heads_up_time_out_5sec">5 секунд</string>
+    <string name="heads_up_time_out_6sec">6 секунд</string>
+    <string name="heads_up_time_out_8sec">8 секунд</string>
+    <string name="heads_up_time_out_10sec">10 секунд</string>
+
 </resources>
