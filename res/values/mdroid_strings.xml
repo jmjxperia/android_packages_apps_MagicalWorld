@@ -466,6 +466,9 @@
     <string name="alarm_blocker_warning_title">Proceed with caution</string>
     <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
 
+    <string name="qs_running_services_title">Running Services Icon</string>
+    <string name="qs_running_services_summary">Disable the tile running services icon in the footer</string>
+
 </resources>
 
 

@@ -42,6 +42,12 @@
         android:summary="@string/qs_footer_warnings_summary"
         android:defaultValue="true" />
 
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
+        android:key="qs_running_services_toggle"
+        android:title="@string/qs_running_services_title"
+        android:summary="@string/qs_running_services_summary"
+        android:defaultValue="false" />
+
     <com.android.settings.mdroid.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_brightness_slider_title"

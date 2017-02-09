@@ -466,4 +466,7 @@
     <string name="alarm_blocker_warning_title">Продовжуйте з обережністю</string>
     <string name="alarm_blocker_warning">Блокування «alarms» може викликати нестабільну роботу, помилки і втрату даних.</string>
 
+    <string name="qs_running_services_title">Значок запущених сервісів</string>
+    <string name="qs_running_services_summary">Прибрати значок запущених сервісів</string>
+
 </resources>
