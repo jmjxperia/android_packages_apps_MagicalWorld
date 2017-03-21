@@ -56,4 +56,9 @@
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" />
 
+    <PreferenceScreen
+        android:key="screenstate_category"
+        android:title="@string/screen_state_toggles_title"
+        android:fragment="mx.mdroid.magicalworld.fragments.ScreenStateToggles"/>
+
 </PreferenceScreen>

@@ -334,4 +334,21 @@
     <string name="lockscreen_visualizer_title">Візуалізатор музики</string>
     <string name="lockscreen_visualizer_summary">Відображення візуалізатора на екрані блокування під час відтворення музики</string>
 
+    <!-- Suspend actions -->
+    <string name="screen_state_toggles_title">Дії в режимі очікування</string>
+    <string name="screen_state_toggles_enable_title">Увімкнути</string>
+    <string name="screen_state_toggles_enable_summary">Дії буде виконано при вимкненні екрану. При ввімкнені екрану попередній стан буде відновлено.</string>
+    <string name="screen_state_toggles_mobile_title">Мобільні мережі</string>
+    <string name="screen_state_toggles_location_title">Місцезнаходження</string>
+    <string name="screen_state_toggles_twog">Перемкнути на 2G</string>
+    <string name="screen_state_toggles_twog_summary">Режим мережі буде змінено на 2G після вимкнення екрану</string>
+    <string name="screen_state_toggles_gps">Вимкнути GPS</string>
+    <string name="screen_state_toggles_gps_summary">Визначення місцезнаходження по GPS буде вимкнуто після вимкнення екрану</string>
+    <string name="screen_state_toggles_mobile_data">Вимкнути мобільну передачу даних</string>
+    <string name="screen_state_toggles_mobile_data_summary">Мобільну передачу даних буде вимкнуто після вимкнення екрану</string>
+    <string name="screen_state_off_delay_title">Затримка дій при вимкненні екрану</string>
+    <string name="screen_state_off_delay_summary">Відкласти дії при вимкненні екрану на вказану кількість секунд</string>
+    <string name="screen_state_on_delay_title">Затримка дій при ввімкненні екрану</string>
+    <string name="screen_state_on_delay_summary">Відкласти дії при ввімкненні екрану на вказану кількість секунд</string>
+
 </resources>
