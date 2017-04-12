@@ -530,4 +530,7 @@
     <string name="heads_up_snooze_15min">15 минут</string>
     <string name="heads_up_snooze_20min">20 минут</string>
 
+    <string name="always_headsup_dialer_title">Принудительные всплывающие уведомления для приложения \"Телефон\"</string>
+    <string name="always_headsup_dialer_summary">Показывать всплывающие уведомления для приложения \"Телефон\", даже если всплывающие уведомления отключены, во избежание окна на весь экран во время входящих вызовов</string>
+
 </resources>

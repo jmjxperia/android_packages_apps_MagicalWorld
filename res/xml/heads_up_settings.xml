@@ -19,6 +19,12 @@
             android:summaryOff="@string/summary_heads_up_disabled"
             android:defaultValue="true" />
 
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
+            android:key="always_headsup_dialer"
+            android:title="@string/always_headsup_dialer_title"
+            android:summary="@string/always_headsup_dialer_summary"
+            android:defaultValue="false" />
+
     <ListPreference
             android:key="heads_up_time_out"
             android:title="@string/heads_up_time_out_title"
