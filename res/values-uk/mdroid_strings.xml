@@ -393,4 +393,8 @@
     <string name="incall_vibrate_call_wait_title">Вібрувати при очікуванні виклику</string>
     <string name="incall_vibrate_disconnect_title">Вібрувати при завершені</string>
 
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Блокування датчиків попакетно</string>
+    <string name="sensor_block_summary">Заблокувати доступ до датчиків для деяких додатків для економії заряда батареї.</string>
+
 </resources>
