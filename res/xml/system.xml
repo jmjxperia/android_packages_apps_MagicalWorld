@@ -62,6 +62,18 @@
         android:summary="@string/enable_mtp_dirtyhack_summary"
         android:defaultValue="false" />
 
+    <PreferenceCategory
+        android:key="blocker_options"
+        android:title="@string/blocker_category" >
+
+        <Preference
+            android:key="wakelock_blocker"
+            android:fragment="mx.mdroid.magicalworld.fragments.WakeLockBlocker"
+            android:title="@string/wakelock_blocker_title"
+            android:summary="@string/wakelock_blocker_summary" />
+
+    </PreferenceCategory>
+
     <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="sensor_block"
         android:title="@string/sensor_block_title"

@@ -446,5 +446,14 @@
     <string name="less_notification_sounds_1m">Кожну хвилину</string>
     <string name="less_notification_sounds_2m">Кожні 2 хвилини</string>
 
+    <!-- Wakelock blocker -->
+    <string name="blocker_category">Блокування \"wakelocks\" і \"alarms\"</string>
+    <string name="wakelock_blocker_title">Блокування \"wakelocks\"</string>
+    <string name="wakelock_blocker_summary">Заблокувати \"wakelocks\" системи</string>
+    <string name="wakelock_blocker_save">Зберегти</string>
+    <string name="wakelock_list_header">Доступні \"wakelocks\"</string>
+    <string name="wakelock_blocker_reload">Скинути</string>
+    <string name="wakelock_blocker_warning_title">Продовжуйте з обережністю</string>
+    <string name="wakelock_blocker_warning">Блокування \"wakelocks\" може викликати нестабільну роботу, помилки і втрату даних</string>
 
 </resources>
