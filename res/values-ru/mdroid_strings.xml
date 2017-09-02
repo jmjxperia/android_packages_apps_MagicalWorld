@@ -351,4 +351,8 @@
     <string name="screen_state_on_delay_title">Задержка выполнения действий при включении экрана</string>
     <string name="screen_state_on_delay_summary">Отложить действия при включении экрана на указанное количество секунд</string>
 
+    <!-- MTP Dirty Hack -->
+    <string name="enable_mtp_dirtyhack_title">MTP вместо Зарядки</string>
+    <string name="enable_mtp_dirtyhack_summary">Включить MTP вместо Зарядки при подключении к ПК</string>
+
 </resources>

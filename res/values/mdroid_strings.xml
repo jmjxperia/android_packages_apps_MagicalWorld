@@ -351,6 +351,10 @@
     <string name="screen_state_on_delay_title">Screen On actions delay</string>
     <string name="screen_state_on_delay_summary">Number of seconds to wait before performing actions after screen on</string>
 
+    <!-- MTP Dirty Hack -->
+    <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
+    <string name="enable_mtp_dirtyhack_summary">Enable MTP instead Charging after connect to PC</string>
+
 </resources>
 
 
