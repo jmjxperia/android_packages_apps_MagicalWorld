@@ -447,13 +447,23 @@
     <string name="less_notification_sounds_2m">Кожні 2 хвилини</string>
 
     <!-- Wakelock blocker -->
-    <string name="blocker_category">Блокування \"wakelocks\" і \"alarms\"</string>
-    <string name="wakelock_blocker_title">Блокування \"wakelocks\"</string>
-    <string name="wakelock_blocker_summary">Заблокувати \"wakelocks\" системи</string>
+    <string name="blocker_category">Блокування «wakelocks» і «alarms»</string>
+    <string name="wakelock_blocker_title">Блокування «wakelocks»</string>
+    <string name="wakelock_blocker_summary">Заблокувати «wakelocks» системи</string>
     <string name="wakelock_blocker_save">Зберегти</string>
-    <string name="wakelock_list_header">Доступні \"wakelocks\"</string>
-    <string name="wakelock_blocker_reload">Скинути</string>
+    <string name="wakelock_list_header">Доступні «wakelocks»</string>
+    <string name="wakelock_blocker_reload">Перезавантажити</string>
     <string name="wakelock_blocker_warning_title">Продовжуйте з обережністю</string>
-    <string name="wakelock_blocker_warning">Блокування \"wakelocks\" може викликати нестабільну роботу, помилки і втрату даних</string>
+    <string name="wakelock_blocker_warning">Блокування «wakelocks» може викликати нестабільну роботу, помилки і втрату даних.</string>
+
+    <!-- Alarm blocker -->
+    <string name="alarm_blocker">Блокування «alarms»</string>
+    <string name="alarm_blocker_title">Включено</string>
+    <string name="alarm_blocker_summary">Заблокувати «alarms» при вимкнутому екрані</string>
+    <string name="alarm_blocker_save">Зберегти</string>
+    <string name="alarm_list_header">Доступні «alarms»</string>
+    <string name="alarm_blocker_reload">Перезавантажити</string>
+    <string name="alarm_blocker_warning_title">Продовжуйте з обережністю</string>
+    <string name="alarm_blocker_warning">Блокування «alarms» може викликати нестабільну роботу, помилки і втрату даних.</string>
 
 </resources>
