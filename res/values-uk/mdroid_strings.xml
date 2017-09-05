@@ -387,4 +387,10 @@
     <!-- Seekbar default text -->
     <string name="custom_seekbar_default_text">За замовч.</string>
 
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Налаштування вібрації під час виклику</string>
+    <string name="incall_vibrate_connect_title">Вібрувати при відповіді</string>
+    <string name="incall_vibrate_call_wait_title">Вібрувати при очікуванні виклику</string>
+    <string name="incall_vibrate_disconnect_title">Вібрувати при завершені</string>
+
 </resources>

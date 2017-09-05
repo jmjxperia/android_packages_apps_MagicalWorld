@@ -16,8 +16,12 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.android.settings.Utils;
+
 public class NotificationSettings extends SettingsPreferenceFragment
                         implements OnPreferenceChangeListener {
+
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     private ListPreference mTickerMode;
 
@@ -36,6 +40,11 @@ public class NotificationSettings extends SettingsPreferenceFragment
                 1, UserHandle.USER_CURRENT);
         mTickerMode.setValue(String.valueOf(tickerMode));
         mTickerMode.setSummary(mTickerMode.getEntry());
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(incallVibCategory);
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
