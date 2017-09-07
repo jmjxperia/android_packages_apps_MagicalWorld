@@ -362,4 +362,13 @@
     <string name="media_art_title">Обкладинки альбомів</string>
     <string name="media_art_summary">Увімкнути відображення обкладинок альбомів на екрані блокування</string>
 
+    <!-- Lockscreen weather -->
+    <string name="lock_screen_weather_settings_title">Погода на екрані блокування</string>
+    <string name="weather_show_weather_title">Показувати погоду</string>
+    <string name="weather_show_weather_summary">Увімкнути відображення інформації про погоду</string>
+    <string name="weather_show_location_title">Показувати місцезнаходження</string>
+    <string name="weather_show_location_summary">Увімкнути відображення місцезнаходження</string>
+    <string name="weather_config_title">Налаштування сервісу</string>
+    <string name="weather_icon_pack_title">Стиль іконок</string>
+
 </resources>

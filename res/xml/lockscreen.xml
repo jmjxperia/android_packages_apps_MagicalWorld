@@ -24,6 +24,11 @@
             android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
     </Preference>
 
+    <Preference
+        android:key="lockscreen_weather"
+        android:title="@string/lock_screen_weather_settings_title"
+        android:fragment="mx.mdroid.magicalworld.fragments.LockScreenWeatherSettings" />
+
     <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="lockscreen_scramble_pin_layout"
         android:title="@string/unlock_scramble_pin_layout_title"
