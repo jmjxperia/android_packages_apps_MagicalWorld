@@ -355,6 +355,9 @@
     <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
     <string name="enable_mtp_dirtyhack_summary">Enable MTP instead Charging after connect to PC</string>
 
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">Lockscreen shortcuts</string>
+
 </resources>
 
 

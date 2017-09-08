@@ -355,4 +355,7 @@
     <string name="enable_mtp_dirtyhack_title">MTP замість Зарядки</string>
     <string name="enable_mtp_dirtyhack_summary">Увімкнути MTP замість Зарядки при підключенні до ПК</string>
 
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">Ярлики на екрані блокування</string>
+
 </resources>
