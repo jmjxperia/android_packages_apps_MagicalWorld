@@ -321,8 +321,8 @@
     <string name="volbtn_wake_device_title">Пробуждение кнопками громкости</string>
     <string name="volbtn_wake_device_summary">Нажатие одной из кнопок громкости пробуждает устройство</string>
 
-    <!-- System default animation -->
-    <string name="system_default_animation_title">Анимация в стиле Android P</string>
-    <string name="system_default_animation_summary">Включение стандартной анимации из Android P</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_title">Регулятор яркости</string>
+    <string name="qs_brightness_slider_summary">Показать регулятор яркости в панели быстрых настроек</string>
 
 </resources>
