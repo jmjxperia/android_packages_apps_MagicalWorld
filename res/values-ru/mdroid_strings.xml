@@ -358,4 +358,8 @@
     <!-- Lockscreen icons -->
     <string name="lockscreen_tuner_title">Ярлыки на экране блокировки</string>
 
+    <!-- Media art -->
+    <string name="media_art_title">Обложки альбомов</string>
+    <string name="media_art_summary">Включить отображение обложек альбомов на экране блокировки</string>
+
 </resources>
