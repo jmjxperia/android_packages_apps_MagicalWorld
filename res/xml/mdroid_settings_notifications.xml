@@ -49,6 +49,22 @@
         android:defaultValue="true" />
 
     <PreferenceCategory
+        android:key="light_category"
+        android:title="@string/light_category">
+
+        <Preference
+            android:key="charging_light"
+            android:fragment="com.android.settings.mdroid.fuelgauge.BatteryLightSettings"
+            android:title="@string/battery_light_settings" />
+
+        <Preference
+            android:key="notification_light"
+            android:fragment="com.android.settings.applications.NotificationApps"
+            android:title="@string/notification_light_settings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="ticker_notifications_category"
         android:title="@string/ticker_screen_title">
 

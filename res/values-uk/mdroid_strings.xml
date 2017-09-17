@@ -533,4 +533,8 @@
     <string name="always_headsup_dialer_title">Примусові виринаючі повідомлення для додатка «Телефон»</string>
     <string name="always_headsup_dialer_summary">Показувати виринаючі повідомлення для додатка «Телефон», навіть якщо виринаючі повідомлення вимкнені, щоб уникнути вікна на весь екран під час вхідних викликів</string>
 
+    <string name="light_category">Світловий індикатор</string>
+    <string name="notification_light_settings">Індикатор сповіщень</string>
+    <string name="battery_light_settings">Індикатор батареї</string>
+
 </resources>

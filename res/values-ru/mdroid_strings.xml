@@ -533,4 +533,8 @@
     <string name="always_headsup_dialer_title">Принудительные всплывающие уведомления для приложения \"Телефон\"</string>
     <string name="always_headsup_dialer_summary">Показывать всплывающие уведомления для приложения \"Телефон\", даже если всплывающие уведомления отключены, во избежание окна на весь экран во время входящих вызовов</string>
 
+    <string name="light_category">Световой индикатор</string>
+    <string name="notification_light_settings">Индикатор уведомлений</string>
+    <string name="battery_light_settings">Индикатор батареи</string>
+
 </resources>
