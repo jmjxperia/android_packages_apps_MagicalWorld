@@ -23,6 +23,13 @@
         android:fragment="mx.mdroid.magicalworld.fragments.QsRowsColumns"
         android:title="@string/qs_rows_columns_title"/>
 
+    <!-- QS scroller -->
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
+        android:key="qs_quickbar_scroll_enabled"
+        android:title="@string/qqs_scroll_title"
+        android:summary="@string/qqs_scroll_summary"
+        android:defaultValue="false"/>
+
     <ListPreference
         android:key="quick_pulldown"
         android:title="@string/quick_pulldown_title"
