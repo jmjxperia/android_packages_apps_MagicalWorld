@@ -259,7 +259,9 @@
     <string name="summary_heads_up_disabled">Виринаючі повідомлення вимкнені</string>
     <string name="add_heads_up_package">Додати додаток</string>
     <string name="add_heads_up_stoplist_summary">Заборонити виринаючі повідомлення коли відкриті ці додатки</string>
+    <string name="add_heads_up_blacklist_summary">Заборонити виринаючі повідомлення від цих додатків</string>
     <string name="heads_up_stoplist_title">Список додатків</string>
+    <string name="heads_up_blacklist_title">Чорний список</string>
     <string name="profile_choose_app">Вибрати додаток</string>
     <string name="dialog_delete_title">Видалити</string>
     <string name="dialog_delete_message">Видалити вибраний елемент?</string>
