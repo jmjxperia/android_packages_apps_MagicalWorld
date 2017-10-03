@@ -482,4 +482,9 @@
     <string name="wallpaper_tint_notification_shade">Окраска затенения уведомлений</string>
     <string name="wallpaper_tint_summary">Применение окраски к фону на основе обоев домашнего экрана</string>
 
+    <!-- Headset ringtone audio focus -->
+    <string name="ringtone_focus_mode_title">Играть мелодию вызова через</string>
+    <string name="ringtone_focus_mode_dynamic">Наушники, при включенной музыке</string>
+    <string name="ringtone_focus_mode_stock">"Динамик (по умолчанию)"</string>
+
 </resources>

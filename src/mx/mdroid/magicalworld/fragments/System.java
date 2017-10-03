@@ -39,7 +39,9 @@ public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "System";
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
+    private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
     private ListPreference mScreenOffAnimation;
+    private ListPreference mHeadsetRingtoneFocus;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,12 +51,19 @@ public class System extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
 
-       mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
-       int screenOffStyle = Settings.System.getInt(resolver,
-               Settings.System.SCREEN_OFF_ANIMATION, 0);
-       mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
-       mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
-       mScreenOffAnimation.setOnPreferenceChangeListener(this);
+        mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
+        int screenOffStyle = Settings.System.getInt(resolver,
+                Settings.System.SCREEN_OFF_ANIMATION, 0);
+        mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
+        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
+        mScreenOffAnimation.setOnPreferenceChangeListener(this);
+
+        mHeadsetRingtoneFocus = (ListPreference) findPreference(RINGTONE_FOCUS_MODE);
+        int mHeadsetRingtoneFocusValue = Settings.Global.getInt(resolver,
+                Settings.Global.RINGTONE_FOCUS_MODE, 0);
+        mHeadsetRingtoneFocus.setValue(Integer.toString(mHeadsetRingtoneFocusValue));
+        mHeadsetRingtoneFocus.setSummary(mHeadsetRingtoneFocus.getEntry());
+        mHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -82,6 +91,14 @@ public class System extends SettingsPreferenceFragment implements
                     Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf((String) objValue));
             int valueIndex = mScreenOffAnimation.findIndexOfValue((String) objValue);
             mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
+            return true;
+        } else if (preference == mHeadsetRingtoneFocus) {
+            int mHeadsetRingtoneFocusValue = Integer.valueOf((String) objValue);
+            int index = mHeadsetRingtoneFocus.findIndexOfValue((String) objValue);
+            mHeadsetRingtoneFocus.setSummary(
+                    mHeadsetRingtoneFocus.getEntries()[index]);
+            Settings.Global.putInt(resolver, Settings.Global.RINGTONE_FOCUS_MODE,
+                    mHeadsetRingtoneFocusValue);
             return true;
         }
         return false;

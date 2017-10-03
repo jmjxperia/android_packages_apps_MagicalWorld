@@ -80,6 +80,12 @@
         android:defaultValue="1500"
         settings:units="@string/units_ms"/>
 
+    <ListPreference
+        android:key="ringtone_focus_mode"
+        android:title="@string/ringtone_focus_mode_title"
+        android:entries="@array/ringtone_focus_mode_entries"
+        android:entryValues="@array/ringtone_focus_mode_values" />
+
     <PreferenceCategory
         android:key="blocker_options"
         android:title="@string/blocker_category" >

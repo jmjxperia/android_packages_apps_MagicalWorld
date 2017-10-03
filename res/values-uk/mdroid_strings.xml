@@ -482,4 +482,9 @@
     <string name="wallpaper_tint_notification_shade">Забарвлення затінення повідомлень</string>
     <string name="wallpaper_tint_summary">Застосування забарвлення до фону на основі шпалер домашнього екрана</string>
 
+    <!-- Headset ringtone audio focus -->
+    <string name="ringtone_focus_mode_title">Грати мелодію виклика через</string>
+    <string name="ringtone_focus_mode_dynamic">Навушники, при ввімкненій музиці</string>
+    <string name="ringtone_focus_mode_stock">"Динамік (за замовчуванням)"</string>
+
 </resources>
