@@ -425,4 +425,10 @@
     <string name="carbon_gesture_customapp">Запустити додаток</string>
     <string name="carbon_gesture_launch">Запустити</string>
 
+    <string name="recents_icon_pack_title">Пакет значків</string>
+    <string name="recents_icon_pack_summary">Застосувати користувацький пакет значків для меню «Нещодавні додатки»</string>
+    <string name="no_iconpacks_summary">Пакети значків не встановлено</string>
+    <string name="dialog_pick_iconpack_title">Выберіть пакет значків</string>
+    <string name="default_iconpack_title">Значки за замовчуванням</string>
+
 </resources>

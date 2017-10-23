@@ -41,20 +41,24 @@
         android:entryValues="@array/immersive_recents_values"
         android:persistent="false" />
 
-     <Preference
+    <Preference
         android:key="hide_app_from_recents"
         android:title="@string/hide_apps_from_recents_title"
         android:summary="@string/hide_apps_from_recents_summary" >
-             <intent android:action="android.intent.action.MAIN"
-                 android:targetPackage="com.android.settings"
-                 android:targetClass="mx.mdroid.magicalworld.fragments.HAFRAppListActivity" />
-     </Preference>
- 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
-         android:key="systemui_recents_mem_display"
-         android:title="@string/recents_show_membar_title"
-         android:summary="@string/recents_show_membar_summary"
-         android:defaultValue="false" />
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="mx.mdroid.magicalworld.fragments.HAFRAppListActivity" />
+    </Preference>
 
+    <Preference
+        android:key="recents_icon_pack"
+        android:title="@string/recents_icon_pack_title"
+        android:summary="@string/recents_icon_pack_summary" />
+
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
+        android:key="systemui_recents_mem_display"
+        android:title="@string/recents_show_membar_title"
+        android:summary="@string/recents_show_membar_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>

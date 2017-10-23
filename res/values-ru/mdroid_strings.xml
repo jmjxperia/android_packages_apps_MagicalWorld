@@ -425,4 +425,10 @@
     <string name="carbon_gesture_customapp">Запустить приложение</string>
     <string name="carbon_gesture_launch">Запустить</string>
 
+    <string name="recents_icon_pack_title">Пакет значков</string>
+    <string name="recents_icon_pack_summary">Применить пользовательский пакет значков для меню \"Недавние приложения\"</string>
+    <string name="no_iconpacks_summary">Пакеты значков не установлены</string>
+    <string name="dialog_pick_iconpack_title">Выберите пакет значков</string>
+    <string name="default_iconpack_title">Значки по умолчанию</string>
+
 </resources>
