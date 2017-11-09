@@ -582,6 +582,7 @@
     <string name="ring_volume_option_title">Уровни громкости: Звонок</string>
     <string name="system_volume_option_title">Уровни громкости: Система</string>
     <string name="call_volume_option_title">Уровни громкости: Голосовой вызов</string>
+    <string name="bluetooth_sco_volume_option_title">Уровни громкости: Bluetooth звонок</string>
     <string name="volume_steps_reset">Сброс</string>
 
     <!-- 4G icon -->

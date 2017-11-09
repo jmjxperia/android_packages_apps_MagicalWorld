@@ -582,6 +582,7 @@
     <string name="ring_volume_option_title">Рівні гучності: Дзвінок</string>
     <string name="system_volume_option_title">Рівні гучності: Система</string>
     <string name="call_volume_option_title">Рівні гучності: Голосовий виклик</string>
+    <string name="bluetooth_sco_volume_option_title">Рівні гучності: Bluetooth виклик</string>
     <string name="volume_steps_reset">Скинути</string>
 
     <!-- 4G icon -->
