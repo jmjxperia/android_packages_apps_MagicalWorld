@@ -594,4 +594,8 @@
     <string name="call_volume_option_title">Уровни громкости: Голосовой вызов</string>
     <string name="volume_steps_reset">Сброс</string>
 
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Значок 4G</string>
+    <string name="show_fourg_icon_summary">Отображать значок 4G возле индикатора сети, вместо LTE</string>
+
 </resources>
