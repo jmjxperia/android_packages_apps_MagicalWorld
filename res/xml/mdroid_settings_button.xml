@@ -47,6 +47,12 @@
         android:key="volume_and_power_buttons_category"
         android:title="@string/volume_and_power_buttons_category" >
 
+        <Preference
+            android:key="volume_steps"
+            android:title="@string/volume_steps_title"
+            android:summary="@string/volume_steps_summary"
+            android:fragment="mx.mdroid.magicalworld.fragments.VolumeSteps" />
+
         <com.android.settings.mdroid.SystemSettingSwitchPreference
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
