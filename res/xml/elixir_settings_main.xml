@@ -17,4 +17,31 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/elixir_settings_title" >
 
+     <!-- Status Bar -->
+         <PreferenceScreen
+             android:key="statusbar_category"
+             android:title="@string/statusbar_title"
+             android:fragment="mx.elixir.magicalworld.fragments.StatusBarSettings" 
+             android:icon="@drawable/ic_settings_statusbar"/>
+ 
+      <!-- Buttons -->
+         <PreferenceScreen
+             android:key="buttonsettings_category"
+             android:title="@string/button_title"
+             android:fragment="mx.elixir.magicalworld.fragments.ButtonSettings"
+             android:icon="@drawable/ic_settings_buttons"/>
+ 
+      <!-- Navigation Bar -->
+         <PreferenceScreen
+             android:key="navigationbar_category"
+             android:title="@string/navbar_title" 
+             android:fragment="mx.elixir.magicalworld.fragments.NavbarSettings"
+             android:icon="@drawable/ic_settings_navbar"/>
+
+      <!-- Recents -->
+         <PreferenceScreen
+             android:key="recents_category"
+             android:title="@string/recents_title"
+             android:fragment="mx.elixir.magicalworld.fragments.RecentsSettings"
+             android:icon="@drawable/ic_settings_recents"/>
 </PreferenceScreen>

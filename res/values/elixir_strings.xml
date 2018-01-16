@@ -16,5 +16,17 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
 	<string name="elixir_settings_title">MagicalWorld</string>
+  
+        <string name="button_title">Buttons</string>
+        <string name="navbar_title">Navigation bar</string>
+        <string name="recents_title">Recents apps</string>
+        <string name="statusbar_title">Status bar</string>
+
+      <!-- General strings -->
+     <string name="ok">OK</string>
+     <string name="reset">Reset</string>
+     <string name="cancel">Cancel</string>
+     <string name="save">Save</string>
+
 
 </resources>
