@@ -21,12 +21,15 @@
         <string name="navbar_title">Navigation bar</string>
         <string name="recents_title">Recents apps</string>
         <string name="statusbar_title">Status bar</string>
-
+        <string name="lockscreen_category">Lockscreen</string>
       <!-- General strings -->
      <string name="ok">OK</string>
      <string name="reset">Reset</string>
      <string name="cancel">Cancel</string>
      <string name="save">Save</string>
-
+     
+     <!-- Lockscreen torch -->
+     <string name="keyguard_torch_title">Lockscreen torch</string>
+     <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
 
 </resources>
