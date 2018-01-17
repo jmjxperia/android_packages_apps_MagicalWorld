@@ -55,7 +55,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
         mKeyguardTorch = (SwitchPreference) findPreference(KEYGUARD_TOGGLE_TORCH);
         mKeyguardTorch.setOnPreferenceChangeListener(this);
-        if (!CrUtils.deviceSupportsFlashLight(getActivity())) {
+        if (!ElixirUtils.deviceSupportsFlashLight(getActivity())) {
             prefSet.removePreference(mKeyguardTorch);
         } else {
         mKeyguardTorch.setChecked((Settings.System.getInt(resolver,
