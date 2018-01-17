@@ -51,4 +51,10 @@
         android:icon="@drawable/ic_lockscreen"
         android:title="@string/lockscreen_category" />
 
+      <!-- system -->
+        <Preference
+        android:fragment="mx.elixir.magicalworld.fragments.System"
+        android:icon="@drawable/ic_system"
+        android:title="@string/system_category" />
+
 </PreferenceScreen>
