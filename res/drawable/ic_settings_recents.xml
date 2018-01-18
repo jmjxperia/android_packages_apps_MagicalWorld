@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2015 The PAC-ROM Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
+Copyright (C) 2014 The Android Open Source Project
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
     android:height="24dp"
     android:viewportWidth="24"
-    android:viewportHeight="24">
+    android:viewportHeight="24"
+    android:tint="?android:attr/colorAccent" >
 
     <path
-        android:fillColor="?android:attr/colorControlNormal"
-        android:pathData="M20.1,8V5c0-0.7-0.5-1.3-1.1-1.4V2.1c0-0.8-0.6-1.4-1.3-1.4H6.2C5.5,0.7,5,1.3,5,2.1v1.5
-C4.3,3.7,3.9,4.3,3.9,5v3C3.3,8.2,3,8.8,3,9.4v12.3c0,0.9,0.7,1.6,1.6,1.6h14.8c0.9,0,1.6-0.7,1.6-1.6V9.4C21,8.8,20.7,8.2,20.1,8z
-M18.3,5.2v2.6H5.7V5.2H18.3z M17.5,2.3v1.3H6.5V2.3H17.5z M19,21.6H5v-12h14V21.6z" />
+        android:pathData="M0 0h24v24H0z" />
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M9 7H7v2h2V7zm0 4H7v2h2v-2zm0-8c-1.11 0-2 .9-2 2h2V3zm4
+12h-2v2h2v-2zm6-12v2h2c0-1.1-.9-2-2-2zm-6 0h-2v2h2V3zM9 17v-2H7c0 1.1 .89 2 2
+2zm10-4h2v-2h-2v2zm0-4h2V7h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2zM5 7H3v12c0 1.1 .89 2 2
+2h12v-2H5V7zm10-2h2V3h-2v2zm0 12h2v-2h-2v2z" />
 </vector>
