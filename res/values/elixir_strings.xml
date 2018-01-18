@@ -18,7 +18,6 @@
 	<string name="elixir_settings_title">MagicalWorld</string>
   
         <string name="button_title">Buttons</string>
-        <string name="navbar_title">Navigation bar</string>
         <string name="recents_title">Recents apps</string>
         <string name="statusbar_title">Status bar</string>
         <string name="lockscreen_category">Lockscreen</string>
@@ -79,5 +78,8 @@
     <string name="double_tap_lock_sleep_title">Double tap lock screen to sleep</string>
     <string name="double_tap_lock_sleep_summary">Double tap lock screen to put the device to sleep</string>
 
+   <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Enable Pixel navbar animation</string>
+    <string name="pixel_navbar_anim_summary">Requires a SystemUI restart</string>
 
 </resources>

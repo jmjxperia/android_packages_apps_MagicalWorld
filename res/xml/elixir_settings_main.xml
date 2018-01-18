@@ -31,13 +31,6 @@
              android:fragment="mx.elixir.magicalworld.fragments.ButtonSettings"
              android:icon="@drawable/ic_settings_buttons"/>
  
-      <!-- Navigation Bar -->
-         <PreferenceScreen
-             android:key="navigationbar_category"
-             android:title="@string/navbar_title" 
-             android:fragment="mx.elixir.magicalworld.fragments.NavbarSettings"
-             android:icon="@drawable/ic_settings_navbar"/>
-
       <!-- Recents -->
          <PreferenceScreen
              android:key="recents_category"
