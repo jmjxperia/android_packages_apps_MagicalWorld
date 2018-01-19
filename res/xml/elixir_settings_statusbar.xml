@@ -24,4 +24,17 @@
         android:summary="@string/double_tap_status_bar_sleep_summary"
         android:defaultValue="false" />
 
+     <com.android.settings.elixir.SystemSettingSwitchPreference
+         android:key="network_traffic_state"
+         android:title="@string/network_traffic_state_title"
+         android:summary="@string/network_traffic_state_summary"
+         android:defaultValue="true" />
+ 
+     <com.android.settings.elixir.CustomSeekBarPreference
+         android:key="network_traffic_autohide_threshold"
+         android:title="@string/network_traffic_autohide_threshold_title"
+         android:max="10"
+         settings:min="0"
+         settings:units="" />
+
 </PreferenceScreen>

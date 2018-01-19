@@ -82,4 +82,9 @@
     <string name="pixel_navbar_anim_title">Enable Pixel navbar animation</string>
     <string name="pixel_navbar_anim_summary">Requires a SystemUI restart</string>
 
+   <!-- Statusbar net monitor -->
+    <string name="network_traffic_state_title">Network traffic</string>
+    <string name="network_traffic_state_summary">Show net activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+
 </resources>
