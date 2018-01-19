@@ -23,6 +23,9 @@
         <string name="lockscreen_category">Lockscreen</string>
         <string name="system_category">System</string>
  
+     <!-- Statusbar Tuner -->
+     <string name="statusbar_items_title">Statusbar items</string>    
+
      <!-- General strings -->
      <string name="ok">OK</string>
      <string name="reset">Reset</string>
