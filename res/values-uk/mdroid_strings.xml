@@ -431,4 +431,11 @@
     <string name="dialog_pick_iconpack_title">Выберіть пакет значків</string>
     <string name="default_iconpack_title">Значки за замовчуванням</string>
 
+    <!-- Suppress notification sound/vibration -->
+    <string name="notification_sound_vib_screen_on_title">Звук і вібрація сповіщень при ввімкненному екрані</string>
+    <string name="notification_sound_vib_screen_on_display_title">Використання звуку і вібрації для сповіщення</string>
+    <string name="notification_sound_vib_screen_on_never">Ніколи</string>
+    <string name="notification_sound_vib_screen_on_always">Завжди (за замовчуванням)</string>
+    <string name="notification_sound_vib_screen_on_nomedia">Коли медіа не відтворюється</string>
+
 </resources>
