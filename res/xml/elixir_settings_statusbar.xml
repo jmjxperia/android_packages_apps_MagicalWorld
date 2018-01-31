@@ -44,4 +44,9 @@
          settings:min="0"
          settings:units="" />
 
+    <Preference
+        android:key="status_bar_clock"
+        android:fragment="mx.elixir.magicalworld.fragments.StatusBarClockSettings"
+        android:title="@string/status_bar_clock_title" />
+
 </PreferenceScreen>
