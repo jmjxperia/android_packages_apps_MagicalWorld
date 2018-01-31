@@ -97,4 +97,8 @@
     <string name="three_finger_gesture_title">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe with three fingers to screenshot</string>
 
+    <!-- Volume button orientation based on current rotation -->
+    <string name="swap_volume_buttons_title">Swap volume rocker orientation</string>
+    <string name="swap_volume_buttons_summary">Adjust the rocker orientation based on current rotation</string>
+
 </resources>
