@@ -438,4 +438,12 @@
     <string name="notification_sound_vib_screen_on_always">Всегда (по умолчанию)</string>
     <string name="notification_sound_vib_screen_on_nomedia">Когда медиа не вопроизводится</string>
 
+    <string name="less_notification_sounds_title">Умные звуковые уведомления</string>
+    <string name="less_notification_sounds_summary">Воспроизводить звук уведомления каждого приложения только один раз за установленный период времени</string>
+    <string name="less_notification_sounds_default">Поведение по умолчанию</string>
+    <string name="less_notification_sounds_10s">Каждые 10 секунд</string>
+    <string name="less_notification_sounds_30s">Каждые 30 секунд</string>
+    <string name="less_notification_sounds_1m">Каждую минуту</string>
+    <string name="less_notification_sounds_2m">Каждые 2 минуты</string>
+
 </resources>

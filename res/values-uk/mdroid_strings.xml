@@ -438,4 +438,13 @@
     <string name="notification_sound_vib_screen_on_always">Завжди (за замовчуванням)</string>
     <string name="notification_sound_vib_screen_on_nomedia">Коли медіа не відтворюється</string>
 
+    <string name="less_notification_sounds_title">Розумні звукові сповіщення</string>
+    <string name="less_notification_sounds_summary">Відтворювати звук сповіщення кожного додатка тільки один раз за встановлений період часу</string>
+    <string name="less_notification_sounds_default">Поведінка за замовчуванням</string>
+    <string name="less_notification_sounds_10s">Кожні 10 секунд</string>
+    <string name="less_notification_sounds_30s">Кожні 30 секунд</string>
+    <string name="less_notification_sounds_1m">Кожну хвилину</string>
+    <string name="less_notification_sounds_2m">Кожні 2 хвилини</string>
+
+
 </resources>
