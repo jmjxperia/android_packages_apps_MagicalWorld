@@ -375,4 +375,6 @@
     <string name="force_expanded_notifications_title">Примусово розгортати сповіщення</string>
     <string name="force_expanded_notifications_summary">Доступно тільки для додатків, які підтримують розширені сповіщення</string>
 
+    <string name="screenshot_delay_title">Затримка скріншота</string>
+
 </resources>

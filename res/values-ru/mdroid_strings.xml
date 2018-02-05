@@ -375,4 +375,6 @@
     <string name="force_expanded_notifications_title">Принудительно разворачивать уведомления</string>
     <string name="force_expanded_notifications_summary">Доступно только для приложений, поддерживающих расширенные уведомления</string>
 
+    <string name="screenshot_delay_title">Задержка скриншота</string>
+
 </resources>

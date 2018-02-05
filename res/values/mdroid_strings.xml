@@ -379,6 +379,8 @@
     <string name="lockscreen_qs_disabled_title">No QS when secured</string>
     <string name="lockscreen_qs_disabled_summary">Disable quick settings tiles on secured lockscreen</string>
 
+    <string name="screenshot_delay_title">Screenshot delay</string>
+
 </resources>
 
 

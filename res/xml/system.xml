@@ -71,4 +71,13 @@
         android:title="@string/app_ops_settings"
         android:fragment="com.android.settings.applications.AppOpsSummary"/>
 
+    <com.android.settings.mdroid.CustomSeekBarPreference
+        android:key="screenshot_delay"
+        android:title="@string/screenshot_delay_title"
+        android:max="10000"
+        settings:min="100"
+        settings:interval="100"
+        android:defaultValue="1500"
+        settings:units="ms"/>
+
 </PreferenceScreen>
