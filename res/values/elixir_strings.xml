@@ -34,11 +34,7 @@
      <string name="reset">Reset</string>
      <string name="cancel">Cancel</string>
      <string name="save">Save</string>
-     
-     <!-- Lockscreen torch -->
-     <string name="keyguard_torch_title">Lockscreen torch</string>
-     <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
-
+  
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all button</string>
     <string name="show_clear_all_recents_button_summary">Show clear all button</string>
