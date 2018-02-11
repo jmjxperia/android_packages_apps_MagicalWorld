@@ -155,4 +155,8 @@
     <string name="volume_answer_call_title">Volume keys answer</string>
     <string name="volume_answer_call_summary">Answer the call when volume keys pressed</string>
 
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+
 </resources>
