@@ -45,6 +45,7 @@ public class ButtonSettings extends ActionFragment implements
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
+    private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -65,6 +66,7 @@ public class ButtonSettings extends ActionFragment implements
     public static final int KEY_MASK_VOLUME = 0x40;
 
     private ListPreference mTorchPowerButton;
+    private ListPreference mVolumeKeyCursorControl;
 
     private ContentResolver resolver;
 
@@ -79,6 +81,11 @@ public class ButtonSettings extends ActionFragment implements
         resolver = getActivity().getContentResolver();
 
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        int cursorControlAction = Settings.System.getInt(resolver,
+                Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
+        mVolumeKeyCursorControl = initActionList(KEY_VOLUME_KEY_CURSOR_CONTROL,
+                cursorControlAction);
 
         if (!ElixirUtils.deviceSupportsFlashLight(getContext())) {
             Preference toRemove = prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
@@ -181,6 +188,21 @@ public class ButtonSettings extends ActionFragment implements
         super.onPause();
     }
 
+    private ListPreference initActionList(String key, int value) {
+        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
+        list.setValue(Integer.toString(value));
+        list.setSummary(list.getEntry());
+        list.setOnPreferenceChangeListener(this);
+        return list;
+    }
+
+    private void handleActionListChange(ListPreference pref, Object newValue, String setting) {
+        String value = (String) newValue;
+        int index = pref.findIndexOfValue(value);
+        pref.setSummary(pref.getEntries()[index]);
+        Settings.System.putInt(getActivity().getContentResolver(), setting, Integer.valueOf(value));
+    }
+
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         ContentResolver resolver = getActivity().getContentResolver();
 
@@ -208,6 +230,10 @@ public class ButtonSettings extends ActionFragment implements
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
+            return true;
+        } else if (preference == mVolumeKeyCursorControl) {
+            handleActionListChange(mVolumeKeyCursorControl, objValue,
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL);
             return true;
         }
         return false;
