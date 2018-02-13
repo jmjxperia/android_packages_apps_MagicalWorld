@@ -119,7 +119,7 @@
     <string name="clock_date_display_none">Не показувати</string>
     <string name="clock_date_display_small">Малий шрифт</string>
     <string name="clock_date_display_normal">Звичайний шрифт</string>
-    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_normal">Звичайний</string>
     <string name="clock_date_style_lowercase">Нижній регістр</string>
     <string name="clock_date_style_uppercase">Верхній регістр</string>
     <string name="clock_date_format_custom">Користувацький java-формат</string>
@@ -154,5 +154,9 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Відповісти на дзвінок</string>
     <string name="volume_answer_call_summary">Відповідь на вхідні дзвінки кнопками гучності</string>
+
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Пробудження при заряджанні</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Увімкнути екран при підключенні або відключенні джерела живлення.</string>
 
 </resources>
