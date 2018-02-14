@@ -23,6 +23,7 @@
     <string name="lockscreen_category">Екран блокування</string>
     <string name="system_category">Система</string>
     <string name="quicksettings_title">Швидкі налаштування</string>
+    <string name="gesture_category">Жести</string>
     <string name="device_part_title">Налаштування пристрою</string>
 
     <!-- Statusbar Tuner -->
@@ -400,5 +401,28 @@
     <!-- Data Disabled Icon -->
     <string name="data_disabled_icon_title">Відображати іконку вимкнених даних</string>
     <string name="data_disabled_icon_summary">Відображення хрестика поруч з рівнем сигналу, коли дані вимкнуто</string>
+
+    <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">Carbon Жести</string>
+    <string name="carbon_gestures_summary">Налаштування глобальних користувацьких жестів</string>
+    <string name="carbon_gestures_fingers_title">Пальці, що використовуються для жестів</string>
+    <string name="carbon_gestures_right_title">Правий жест</string>
+    <string name="carbon_gestures_left_title">Лівий жест</string>
+    <string name="carbon_gestures_up_title">Жест вгору</string>
+    <string name="carbon_gestures_down_title">Жест вниз</string>
+    <string name="carbon_gesture_disabled">Вимкнено</string>
+    <string name="carbon_gesture_back">Назад</string>
+    <string name="carbon_gesture_home">Додому</string>
+    <string name="carbon_gesture_recents">Нещодавні</string>
+    <string name="carbon_gesture_power">Живлення</string>
+    <string name="carbon_gesture_volume_down">Зменшення гучності</string>
+    <string name="carbon_gesture_volume_up">Збільшення гучності</string>
+    <string name="carbon_gesture_volume_mute">Вимкнення звуку</string>
+    <string name="carbon_gesture_screenshot">Скріншот</string>
+    <string name="carbon_gesture_media_play_pause">Відтворення/Пауза трека</string>
+    <string name="carbon_gesture_media_skip">Наступний трек</string>
+    <string name="carbon_gesture_media_previous">Попередній трек</string>
+    <string name="carbon_gesture_customapp">Запустити додаток</string>
+    <string name="carbon_gesture_launch">Запустити</string>
 
 </resources>

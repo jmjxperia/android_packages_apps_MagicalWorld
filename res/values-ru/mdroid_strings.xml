@@ -23,6 +23,7 @@
     <string name="lockscreen_category">Экран блокировки</string>
     <string name="system_category">Система</string>
     <string name="quicksettings_title">Быстрые настройки</string>
+    <string name="gesture_category">Жесты</string>
     <string name="device_part_title">Настройки устройства</string>
 
     <!-- Statusbar Tuner -->
@@ -400,5 +401,28 @@
     <!-- Data Disabled Icon -->
     <string name="data_disabled_icon_title">Показывать значок отключенной передачи данных</string>
     <string name="data_disabled_icon_summary">Показывать крест над значком сети, когда передача данных отключена</string>
+
+    <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">Carbon Жесты</string>
+    <string name="carbon_gestures_summary">Настройка глобальных пользовательских жестов</string>
+    <string name="carbon_gestures_fingers_title">Пальцы, используемые для жестов</string>
+    <string name="carbon_gestures_right_title">Правый жест</string>
+    <string name="carbon_gestures_left_title">Левый жест</string>
+    <string name="carbon_gestures_up_title">Жест вверх</string>
+    <string name="carbon_gestures_down_title">Жест вниз</string>
+    <string name="carbon_gesture_disabled">Отключено</string>
+    <string name="carbon_gesture_back">Назад</string>
+    <string name="carbon_gesture_home">Домой</string>
+    <string name="carbon_gesture_recents">Недавние</string>
+    <string name="carbon_gesture_power">Питание</string>
+    <string name="carbon_gesture_volume_down">Уменьшение громкости</string>
+    <string name="carbon_gesture_volume_up">Увеличение громкости</string>
+    <string name="carbon_gesture_volume_mute">Выключение звука</string>
+    <string name="carbon_gesture_screenshot">Скриншот</string>
+    <string name="carbon_gesture_media_play_pause">Воспроизведение/Пауза трека</string>
+    <string name="carbon_gesture_media_skip">Следующий трек</string>
+    <string name="carbon_gesture_media_previous">Предыдущий трек</string>
+    <string name="carbon_gesture_customapp">Запустить приложение</string>
+    <string name="carbon_gesture_launch">Запустить</string>
 
 </resources>

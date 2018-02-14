@@ -64,6 +64,12 @@
             android:icon="@drawable/ic_system"
             android:title="@string/system_category" />
 
+        <!-- Gesture -->
+        <Preference
+            android:fragment="mx.mdroid.magicalworld.fragments.gestures.GestureSettings"
+            android:icon="@drawable/ic_gestures"
+            android:title="@string/gesture_category" />
+
         <!-- Style -->
         <Preference
             android:fragment="mx.mdroid.magicalworld.fragments.style.StylePreferences"
