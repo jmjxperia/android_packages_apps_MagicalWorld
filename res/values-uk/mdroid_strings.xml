@@ -384,4 +384,7 @@
 
     <string name="screenshot_delay_title">Затримка скріншота</string>
 
+    <!-- Seekbar default text -->
+    <string name="custom_seekbar_default_text">За замовч.</string>
+
 </resources>

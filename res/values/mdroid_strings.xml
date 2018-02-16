@@ -384,6 +384,9 @@
 
     <string name="screenshot_delay_title">Screenshot delay</string>
 
+    <!-- Seekbar default text -->
+    <string name="custom_seekbar_default_text">Default</string>
+
 </resources>
 
 
