@@ -16,24 +16,25 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
 	<string name="elixir_settings_title">MagicalWorld</string>
-  
-        <string name="button_title">Buttons</string>
-        <string name="recents_title">Recents apps</string>
-        <string name="statusbar_title">Status bar</string>
-        <string name="lockscreen_category">Lockscreen</string>
-        <string name="system_category">System</string>
+
+    <string name="button_title">Buttons</string>
+    <string name="recents_title">Recents apps</string>
+    <string name="statusbar_title">Status bar</string>
+    <string name="lockscreen_category">Lockscreen</string>
+    <string name="system_category">System</string>
+    <string name="quicksettings_title">Quick Settings</string>
  
-     <!-- Statusbar Tuner -->
-     <string name="statusbar_items_title">Statusbar items</string>    
+    <!-- Statusbar Tuner -->
+    <string name="statusbar_items_title">Statusbar items</string>
 
-     <!-- Navbar tuner -->
-     <string name="navbar_tuner_title">Navbar buttons</string>
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar buttons</string>
 
-     <!-- General strings -->
-     <string name="ok">OK</string>
-     <string name="reset">Reset</string>
-     <string name="cancel">Cancel</string>
-     <string name="save">Save</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
   
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all button</string>
@@ -46,7 +47,7 @@
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
 
-     <!-- Immersive Recents -->
+    <!-- Immersive Recents -->
     <string name="immersive_recents_title">Immersive Recents</string>
     <string name="immersive_recents_summary">Change the view of the recents screen</string>
     <string name="immersive_recents_dialog_title">Select recents view</string>
@@ -80,11 +81,11 @@
     <string name="double_tap_lock_sleep_title">Double tap lock screen to sleep</string>
     <string name="double_tap_lock_sleep_summary">Double tap lock screen to put the device to sleep</string>
 
-   <!-- Navbar Animation -->
+    <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Enable Pixel navbar animation</string>
     <string name="pixel_navbar_anim_summary">Requires a SystemUI restart</string>
 
-   <!-- Statusbar net monitor -->
+    <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_state_summary">Show net activity in statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
@@ -129,11 +130,11 @@
     <string name="face_auto_unlock_title">Face auto unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
 
-   <!-- Screen Off animation -->
-   <string name="screen_off_animation_title">Screen off animation</string>
-   <string name="screen_off_animation_default">Default</string>
-   <string name="screen_off_animation_crt">CRT</string>
-   <string name="screen_off_animation_scale">Scale</string>
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
 
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Playback control</string>
@@ -234,5 +235,12 @@
     <string name="style_restart_summary">Restart SystemUI if the applied style causes issues</string>
     <string name="theme_applied_toast">Theme applied.</string>
     <string name="applying_theme_toast">Applying theme, please wait...</string>
+
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
 
 </resources>

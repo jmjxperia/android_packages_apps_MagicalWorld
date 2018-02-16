@@ -23,7 +23,14 @@
              android:title="@string/statusbar_title"
              android:fragment="mx.elixir.magicalworld.fragments.StatusBarSettings" 
              android:icon="@drawable/ic_settings_statusbar"/>
- 
+
+        <!-- Quick Settings panel -->
+        <PreferenceScreen
+            android:key="quicksettings_category"
+            android:title="@string/quicksettings_title"
+            android:fragment="mx.elixir.magicalworld.fragments.QuickSettings"
+            android:icon="@drawable/ic_settings_quicksettings"/>
+
       <!-- Buttons -->
          <PreferenceScreen
              android:key="buttonsettings_category"
