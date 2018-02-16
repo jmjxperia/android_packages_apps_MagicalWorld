@@ -22,6 +22,7 @@
     <string name="statusbar_title">Рядок стану</string>
     <string name="lockscreen_category">Екран блокування</string>
     <string name="system_category">Система</string>
+    <string name="quicksettings_title">Швидкі налаштування</string>
 
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Редагування іконок</string>
@@ -234,5 +235,12 @@
     <string name="style_restart_summary">Перезапустіть SystemUI, якщо застосована тема викликає проблеми</string>
     <string name="theme_applied_toast">Тема застосована.</string>
     <string name="applying_theme_toast">Застосування теми, зачекайте...</string>
+
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">Рядки і стовпці</string>
+    <string name="qs_rows_portrait_title">Кількість плиток у рядку (портрет.)</string>
+    <string name="qs_rows_landscape_title">Кількість плиток у рядку (альбом.)</string>
+    <string name="qs_columns_portrait_title">Кількість плиток у стовпці (портрет.)</string>
+    <string name="qs_columns_landscape_title">Кількість плиток у стовпці (альбом.)</string>
 
 </resources>
