@@ -49,4 +49,9 @@
         android:fragment="mx.elixir.magicalworld.fragments.StatusBarClockSettings"
         android:title="@string/status_bar_clock_title" />
 
+    <Preference
+        android:key="battery_settings"
+        android:title="@string/battery_style_category_title"
+        android:fragment="mx.elixir.magicalworld.fragments.StatusBarBattery" />
+
 </PreferenceScreen>

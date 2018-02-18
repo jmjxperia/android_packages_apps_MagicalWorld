@@ -39,8 +39,8 @@ import java.util.Collections;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-     private CustomSeekBarPreference mThreshold;
-     private SystemSettingSwitchPreference mNetMonitor;
+    private CustomSeekBarPreference mThreshold;
+    private SystemSettingSwitchPreference mNetMonitor;
 
     @Override
     public void onCreate(Bundle icicle) {

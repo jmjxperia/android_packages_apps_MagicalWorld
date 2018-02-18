@@ -50,11 +50,13 @@
     <string-array name="clock_style_entries" translatable="false">
         <item>@string/right_clock</item>
         <item>@string/center_clock</item>
+        <item>@string/left_clock</item>
     </string-array>
 
     <string-array name="clock_style_values" translatable="false">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="entries_status_bar_am_pm">
@@ -149,6 +151,42 @@
     </string-array>
 
     <string-array name="volbtn_cursor_control_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Battery Styles -->
+    <string-array name="battery_style_entries" translatable="false">
+        <item>@string/battery_style_port</item>
+<!--        <item>@string/battery_style_land</item>-->
+        <item>@string/battery_style_circle</item>
+        <item>@string/battery_style_dotted_circle</item>
+        <item>@string/battery_style_big_circle</item>
+        <item>@string/battery_style_big_dotted_circle</item>
+        <item>@string/battery_style_text</item>
+        <item>@string/battery_style_hidden</item>
+    </string-array>
+
+    <string-array name="battery_style_values" translatable="false">
+        <item>0</item>
+<!--        <item>1</item>-->
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <!-- Battery Percent -->
+    <string-array name="battery_percent_entries" translatable="false">
+        <item>@string/battery_percent_none</item>
+        <item>@string/battery_percent_outside</item>
+        <item>@string/battery_percent_inside</item>
+    </string-array>
+
+    <string-array name="battery_percent_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>

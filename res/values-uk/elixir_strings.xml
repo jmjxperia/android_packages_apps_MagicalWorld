@@ -103,6 +103,7 @@
     <string name="clock_title_enable">Вирівнювання</string>
     <string name="right_clock">Праворуч</string>
     <string name="center_clock">У центрі</string>
+    <string name="left_clock">Ліворуч</string>
     <string name="status_bar_clock_seconds_title">Секунди</string>
     <string name="status_bar_clock_seconds_summary">Відображення секунд біля годинника</string>
     <string name="status_bar_am_pm_title">ДП/ПП</string>
@@ -158,5 +159,21 @@
     <!-- Wakeup options -->
     <string name="wakeup_when_plugged_unplugged_title">Пробудження при заряджанні</string>
     <string name="wakeup_when_plugged_unplugged_summary">Увімкнути екран при підключенні або відключенні джерела живлення.</string>
+
+    <!-- Battery Styles -->
+    <string name="battery_style_title">Стиль батареї</string>
+    <string name="battery_style_port">Вертикальний значок</string>
+    <string name="battery_style_land">Горизонтальний значок</string>
+    <string name="battery_style_circle">Коло</string>
+    <string name="battery_style_dotted_circle">Крапкове коло</string>
+    <string name="battery_style_big_circle">Велике коло</string>
+    <string name="battery_style_big_dotted_circle">Велике крапкове коло</string>
+    <string name="battery_style_text">Текст</string>
+    <string name="battery_style_hidden">Немає</string>
+    <string name="show_battery_percent_title">Відсоток заряду</string>
+    <string name="battery_style_category_title">Іконка батареї</string>
+    <string name="battery_percent_none">Не відображати</string>
+    <string name="battery_percent_outside">Поруч з іконкою</string>
+    <string name="battery_percent_inside">Усередині іконки</string>
 
 </resources>
