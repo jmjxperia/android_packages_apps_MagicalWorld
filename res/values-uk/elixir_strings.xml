@@ -176,4 +176,22 @@
     <string name="battery_percent_outside">Поруч з іконкою</string>
     <string name="battery_percent_inside">Усередині іконки</string>
 
+    <!-- Buttons backlight timeout -->
+    <string name="backlight_timeout_title">Таймаут підсвічування кнопок</string>
+    <string name="backlight_timeout_on">Завжди увімкнуто</string>
+    <string name="backlight_timeout_3s">3 сек</string>
+    <string name="backlight_timeout_default">5 сек (за замовчуванням)</string>
+    <string name="backlight_timeout_10s">10 сек</string>
+    <string name="backlight_timeout_15s">15 сек</string>
+    <string name="backlight_timeout_20s">20 сек</string>
+    <string name="backlight_timeout_30s">30 сек</string>
+
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_title">Підсвічування</string>
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_sw_title">Увімкнути підсвічування</string>
+
+    <string name="button_backlight_on_touch_only_title">Підсвічування при торканні</string>
+    <string name="button_backlight_on_touch_only_summary">Вмикання підсвічування кнопок тільки після торкання</string>
+
 </resources>
