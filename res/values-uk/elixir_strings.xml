@@ -194,4 +194,8 @@
     <string name="button_backlight_on_touch_only_title">Підсвічування при торканні</string>
     <string name="button_backlight_on_touch_only_summary">Вмикання підсвічування кнопок тільки після торкання</string>
 
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Режим в "Кишені"</string>
+    <string name="pocket_judge_summary">Блокувати екран і кнопки від випадкового натискання в кишені</string>
+
 </resources>
