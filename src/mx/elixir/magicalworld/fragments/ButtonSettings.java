@@ -31,6 +31,8 @@ import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 import android.widget.Toast;
 
+import mx.elixir.magicalworld.preferences.CustomSeekBarPreference;
+
 import com.android.settings.R;
 import mx.elixir.magicalworld.fragments.ActionFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -46,6 +48,10 @@ public class ButtonSettings extends ActionFragment implements
 
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+
+    //Keys
+    private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
+    private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -64,6 +70,9 @@ public class ButtonSettings extends ActionFragment implements
     public static final int KEY_MASK_APP_SWITCH = 0x10;
     public static final int KEY_MASK_CAMERA = 0x20;
     public static final int KEY_MASK_VOLUME = 0x40;
+
+    private ListPreference mBacklightTimeout;
+    private CustomSeekBarPreference mButtonBrightness;
 
     private ListPreference mTorchPowerButton;
     private ListPreference mVolumeKeyCursorControl;
@@ -115,6 +124,26 @@ public class ButtonSettings extends ActionFragment implements
                     UserHandle.USER_CURRENT);
             mHwKeyDisable.setChecked(keysDisabled != 0);
             mHwKeyDisable.setOnPreferenceChangeListener(this);
+
+            mBacklightTimeout =
+                    (ListPreference) findPreference(KEY_BACKLIGHT_TIMEOUT);
+            mButtonBrightness =
+                    (CustomSeekBarPreference) findPreference(KEY_BUTTON_BRIGHTNESS);
+
+            if (mBacklightTimeout != null) {
+                mBacklightTimeout.setOnPreferenceChangeListener(this);
+                int BacklightTimeout = Settings.System.getInt(getContentResolver(),
+                        Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5000);
+                mBacklightTimeout.setValue(Integer.toString(BacklightTimeout));
+                mBacklightTimeout.setSummary(mBacklightTimeout.getEntry());
+            }
+
+            if (mButtonBrightness != null) {
+                int ButtonBrightness = Settings.System.getInt(getContentResolver(),
+                        Settings.System.BUTTON_BRIGHTNESS, 255);
+                mButtonBrightness.setValue(ButtonBrightness / 1);
+                mButtonBrightness.setOnPreferenceChangeListener(this);
+            }
         }
 
         // bits for hardware keys present on device
@@ -230,6 +259,21 @@ public class ButtonSettings extends ActionFragment implements
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
+            return true;
+        } else if (preference == mBacklightTimeout) {
+            String BacklightTimeout = (String) objValue;
+            int BacklightTimeoutValue = Integer.parseInt(BacklightTimeout);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, BacklightTimeoutValue);
+            int BacklightTimeoutIndex = mBacklightTimeout
+                    .findIndexOfValue(BacklightTimeout);
+            mBacklightTimeout
+                    .setSummary(mBacklightTimeout.getEntries()[BacklightTimeoutIndex]);
+            return true;
+        } else if (preference == mButtonBrightness) {
+            int value = (Integer) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BUTTON_BRIGHTNESS, value * 1);
             return true;
         } else if (preference == mVolumeKeyCursorControl) {
             handleActionListChange(mVolumeKeyCursorControl, objValue,
