@@ -53,6 +53,7 @@ public class ButtonSettings extends ActionFragment implements
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
     private static final String KEY_BUTTON_BRIGHTNESS_SW = "button_brightness_sw";
     private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
+    private static final String KEY_BUTTON_BACKLIGHT_ON_TOUCH = "button_backlight_on_touch_only";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -75,6 +76,7 @@ public class ButtonSettings extends ActionFragment implements
     private ListPreference mBacklightTimeout;
     private CustomSeekBarPreference mButtonBrightness;
     private SwitchPreference mButtonBrightness_sw;
+    private SwitchPreference mButtonBacklightOnTouch;
 
     private ListPreference mTorchPowerButton;
     private ListPreference mVolumeKeyCursorControl;
@@ -138,6 +140,9 @@ public class ButtonSettings extends ActionFragment implements
 
             mButtonBrightness_sw =
                     (SwitchPreference) findPreference(KEY_BUTTON_BRIGHTNESS_SW);
+
+            mButtonBacklightOnTouch =
+                    (SwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_ON_TOUCH);
 
             if (mBacklightTimeout != null) {
                 mBacklightTimeout.setOnPreferenceChangeListener(this);
@@ -278,6 +283,18 @@ public class ButtonSettings extends ActionFragment implements
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
+            if (mButtonBrightness_sw != null) {
+                mButtonBrightness_sw.setEnabled(!value);
+            }
+            if (mButtonBrightness != null) {
+                mButtonBrightness.setEnabled(!value);
+            }
+            if (mBacklightTimeout != null) {
+                mBacklightTimeout.setEnabled(!value);
+            }
+            if (mButtonBacklightOnTouch != null) {
+                mButtonBacklightOnTouch.setEnabled(!value);
+            }
             return true;
         } else if (preference == mBacklightTimeout) {
             String BacklightTimeout = (String) objValue;
