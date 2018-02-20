@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 The ElixirOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="elixir_settings_title">MagicalWorld</string>
+
+    <string name="button_title">Кнопки</string>
+    <string name="recents_title">Недавние приложения</string>
+    <string name="statusbar_title">Строка состояния</string>
+    <string name="lockscreen_category">Экран блокировки</string>
+    <string name="system_category">Система</string>
+
+    <!-- Statusbar Tuner -->
+    <string name="statusbar_items_title">Редактирование иконок</string>
+
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Панель навигации</string>
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Сброс</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Кнопка \"Очистить всё\"</string>
+    <string name="show_clear_all_recents_button_summary">Показать кнопку \"Очистить всё\"</string>
+    <string name="recents_clear_all_location_title">Расположение кнопки</string>
+    <string name="recents_clear_all_location_top_right">Сверху справа</string>
+    <string name="recents_clear_all_location_top_left">Сверху слева</string>
+    <string name="recents_clear_all_location_top_center">Сверху по центру</string>
+    <string name="recents_clear_all_location_bottom_right">Снизу справа</string>
+    <string name="recents_clear_all_location_bottom_left">Снизу слева</string>
+    <string name="recents_clear_all_location_bottom_center">Снизу по центру</string>
+
+    <!-- Immersive Recents -->
+    <string name="immersive_recents_title">Полноэкранный режим</string>
+    <string name="immersive_recents_summary">Изменить вид меню \"Недавние приложения\"</string>
+    <string name="immersive_recents_dialog_title">Выберите вид меню \"Недавние приложения\"</string>
+    <string name="immersive_recents_default">По умолчанию</string>
+    <string name="immersive_recents_fullscreen">Полноэеранный режим</string>
+    <string name="immersive_recents_statusbar">Только строка состояния</string>
+    <string name="immersive_recents_navbar">Только панель навигации</string>
+
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Скрытые приложения</string>
+    <string name="hide_from_recents_add_app">Добавить приложение</string>
+    <string name="hide_apps_from_recents_summary">Выберите приложения, которые будут исключены из меню \"Недавние приложения\"</string>
+
+    <!-- Global Actions -->
+    <string name="global_actions_title">Меню питания</string>
+    <string name="global_actions_summary">Выберите, что показывать, когда вы нажимаете кнопку питания</string>
+    <string name="global_actions_power">Выключение</string>
+    <string name="global_actions_restart">Перезашрузка</string>
+    <string name="global_actions_airplane">Режим полета</string>
+    <string name="global_actions_settings">Настройки</string>
+    <string name="global_actions_lockdown">Блокировка</string>
+    <string name="global_actions_users">Пользователи</string>
+    <string name="global_actions_screenshot">Снимок экрана</string>
+    <string name="global_actions_flashlight">Фонарик</string>
+    <string name="global_actions_advanced_reboot_title">Включить расширенное меню перезагрузки</string>
+    <string name="global_actions_advanced_reboot_summary">Показывать варианты перезагрузки</string>
+
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Выключение экрана двойным касанием строки состояния</string>
+    <string name="double_tap_status_bar_sleep_summary">Дважды коснитесь строки состояния, чтобы выключить экран</string>
+    <string name="double_tap_lock_sleep_title">Выключение экрана двойным касанием на экране блокировки</string>
+    <string name="double_tap_lock_sleep_summary">Дважды коснитесь экрана блокировки, чтобюы выключить экран</string>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Включить анимацию Pixel для панели навигации</string>
+    <string name="pixel_navbar_anim_summary">Необходим перезапуск SystemUI</string>
+
+    <!-- Statusbar net monitor -->
+    <string name="network_traffic_state_title">Индикатор сетевого трафика</string>
+    <string name="network_traffic_state_summary">Показывать скорость передачи данных</string>
+    <string name="network_traffic_autohide_threshold_title">Порог неактивности (КБ/с)</string>
+
+    <!-- Three finger gesture  -->
+    <string name="three_finger_gesture_title">Снимок экрана свайпом</string>
+    <string name="three_finger_gesture_summary">Проведите тремя пальцами, чтобы сделать снимок экрана</string>
+
+    <!-- Volume button orientation based on current rotation -->
+    <string name="swap_volume_buttons_title">Менять местами кнопки громкости</string>
+    <string name="swap_volume_buttons_summary">Менять назначение кнопок регулировки громкости согласно ориентации экрана</string>
+
+    <!-- Statusbar Clock options -->
+    <string name="status_bar_clock_title">Опции часов</string>
+    <string name="status_bar_show_clock_title">Показывать часы и дату</string>
+    <string name="clock_title_enable">Выравнивание</string>
+    <string name="right_clock">Справа</string>
+    <string name="center_clock">По центру</string>
+    <string name="left_clock">Слева</string>
+    <string name="status_bar_clock_seconds_title">Секунды</string>
+    <string name="status_bar_clock_seconds_summary">Отображение секунд возле часов</string>
+    <string name="status_bar_am_pm_title">ДП/ПП</string>
+    <string name="status_bar_am_pm_info">24-часовой формат</string>
+    <string name="am_pm_clock_normal">Обычный шрифт</string>
+    <string name="am_pm_clock_small">Маленький шрифт</string>
+    <string name="am_pm_clock_none">Не показывать</string>
+    <string name="clock_date_display">Дата</string>
+    <string name="clock_date_display_summary">Показывать дату перед часами</string>
+    <string name="clock_date_style">Стиль даты</string>
+    <string name="clock_date_format">Формат даты</string>
+    <string name="clock_date_string_edittext_title">Должен соответствовать DateFormat, например, MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Введите формат</string>
+    <string name="clock_date_display_none">Не показывать</string>
+    <string name="clock_date_display_small">Маленький шрифт</string>
+    <string name="clock_date_display_normal">Обычный шрифт</string>
+    <string name="clock_date_style_normal">Обычный</string>
+    <string name="clock_date_style_lowercase">Нижний регистр</string>
+    <string name="clock_date_style_uppercase">Верхний регистр</string>
+    <string name="clock_date_format_custom">Пользовательский java-формат</string>
+    <string name="menu_cancel">Отмена</string>
+
+    <string name="face_auto_unlock_title">Автоматическая разблокировка</string>
+    <string name="face_auto_unlock_summary">Скрыть экран блокировки при разблокировке лицом</string>
+
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Анимация выключения экрана</string>
+    <string name="screen_off_animation_default">По умолчанию</string>
+    <string name="screen_off_animation_crt">Старый телевизор</string>
+    <string name="screen_off_animation_scale">Масштабирование</string>
+
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Управление плеером</string>
+    <string name="volume_rocker_music_controls_summary">Переключать треки долгим нажатием кнопок громкости при выключенном экране</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Фонарик по кнопке питания</string>
+    <string name="torch_power_button_gesture_none">Выключено</string>
+    <string name="torch_power_button_gesture_dt">Двойное нажатие при выключенном экране (добавляет задержку одного нажатия)</string>
+    <string name="torch_power_button_gesture_dt_toast">Жест перехода к камере отключен</string>
+    <string name="torch_power_button_gesture_lp">Удержание при выключенном экране</string>
+
+    <!-- Volume key cursor control -->
+    <string name="volbtn_cursor_control_title">Перемещение курсора кнопками громкости</string>
+    <string name="volbtn_cursor_control_off">Выключено</string>
+    <string name="volbtn_cursor_control_on">Громкость вверх/вниз перемещает курсор влево/вправо</string>
+    <string name="volbtn_cursor_control_on_reverse">Громкость вверх/вниз перемещает курсор вправо/влево</string>
+
+    <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Ответ кнопками громкости</string>
+    <string name="volume_answer_call_summary">Ответ на входящие звонки кнопками громкости</string>
+
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Пробуждение при зарядке</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Пробуждать устройство при подключении/отключении зарядного устройства.</string>
+
+    <!-- Battery Styles -->
+    <string name="battery_style_title">Стиль батареи</string>
+    <string name="battery_style_port">Вертикальный значок</string>
+    <string name="battery_style_land">Горизонтальный значок</string>
+    <string name="battery_style_circle">Круг</string>
+    <string name="battery_style_dotted_circle">Точечный круг</string>
+    <string name="battery_style_big_circle">Большой круг</string>
+    <string name="battery_style_big_dotted_circle">Большой точечный круг</string>
+    <string name="battery_style_text">Текст</string>
+    <string name="battery_style_hidden">Нет</string>
+    <string name="show_battery_percent_title">Процент заряда</string>
+    <string name="battery_style_category_title">Иконка батареи</string>
+    <string name="battery_percent_none">Не отображать</string>
+    <string name="battery_percent_outside">Рядом с иконкой</string>
+    <string name="battery_percent_inside">Внутри иконки</string>
+
+    <!-- Buttons backlight timeout -->
+    <string name="backlight_timeout_title">Таймаут подсветки кнопок</string>
+    <string name="backlight_timeout_on">Включена постоянно</string>
+    <string name="backlight_timeout_3s">3 сек</string>
+    <string name="backlight_timeout_default">5 сек (по умолчанию)</string>
+    <string name="backlight_timeout_10s">10 сек</string>
+    <string name="backlight_timeout_15s">15 сек</string>
+    <string name="backlight_timeout_20s">20 сек</string>
+    <string name="backlight_timeout_30s">30 сек</string>
+
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_title">Подсветка</string>
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_sw_title">Включить подсветку</string>
+
+    <string name="button_backlight_on_touch_only_title">Подсветка при касании</string>
+    <string name="button_backlight_on_touch_only_summary">Включать подсветку клавиш только после касания</string>
+
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Режим в "Кармане"</string>
+    <string name="pocket_judge_summary">Блокировать экран и кнопки от случайного нажатия в кармане</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Информация о зарядке на экране блокировки</string>
+    <string name="lockscreen_battery_info_summary">Отображение тока зарядки и вольтажа на заблокированном экране</string>
+
+    <!-- Ambient music -->
+    <string name="force_ambient_for_media_pref_title">Сейчас играет</string>
+    <string name="force_ambient_for_media_pref_summary">Отображать информацию о текущем музыкальном треке</string>
+    <string name="ambient_ticker_footer">Эта функция позволяет отображать информацию о текущем музыкальном треке на экране блокировки с включенной функцией активного экрана или без неё.\n\nВы можете выбрать один из двух вариантов, обычный и минимальный. Несмотря на то, что эта функция использует активный экран, она не зависит от него. Она может быть вызвана и без активного экрана при помощи принудительного режима.\n\nОбычный вид включает в себя отображение часов, даты и информации о музыкальном треке.\n\nМинимальный вид включает в себя только отображение информации о музыкальном треке в центре экрана.</string>
+    <string name="force_ambient_for_media_title">Режим отображения</string>
+    <string name="force_ambient_for_media_off">Отключено</string>
+    <string name="force_ambient_for_media_on">Обычный</string>
+    <string name="force_ambient_for_media_on_forced">Обычный (принудительно)</string>
+    <string name="force_ambient_for_media_on_forced_clean">Минимальный (принудительно)</string>
+
+</resources>
