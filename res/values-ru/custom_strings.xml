@@ -17,7 +17,7 @@
     <string name="select_custom_activity_title">Выберите пользовательское действие</string>
     <string name="profile_applist_title">Приложения</string>
     <string name="choose_action_title">Выберите действие</string>
-    <string name="action_entry_default_action">Нстройки по умолчанию</string>
+    <string name="action_entry_default_action">Настройки по умолчанию</string>
     <string name="action_entry_select_app">Выберите приложение</string>
     <string name="action_entry_custom_action">Выберите пользовательское действие</string>
     <string name="hardware_keys_home_key_title">Кнопка \"Домой\"</string>
