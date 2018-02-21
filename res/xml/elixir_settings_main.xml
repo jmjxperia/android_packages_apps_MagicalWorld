@@ -50,4 +50,9 @@
         android:icon="@drawable/ic_system"
         android:title="@string/system_category" />
 
+    <Preference
+        android:fragment="mx.elixir.magicalworld.fragments.style.StylePreferences"
+        android:icon="@drawable/ic_settings_style"
+        android:title="@string/style_title" />
+
 </PreferenceScreen>
