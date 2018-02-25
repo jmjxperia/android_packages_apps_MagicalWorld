@@ -168,6 +168,7 @@
     <string name="battery_style_dotted_circle">Крапкове коло</string>
     <string name="battery_style_big_circle">Велике коло</string>
     <string name="battery_style_big_dotted_circle">Велике крапкове коло</string>
+    <string name="battery_style_square">Квадрат</string>
     <string name="battery_style_text">Текст</string>
     <string name="battery_style_hidden">Немає</string>
     <string name="show_battery_percent_title">Відсоток заряду</string>
