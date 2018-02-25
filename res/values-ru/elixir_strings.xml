@@ -64,7 +64,7 @@
     <string name="global_actions_title">Меню питания</string>
     <string name="global_actions_summary">Выберите, что показывать, когда вы нажимаете кнопку питания</string>
     <string name="global_actions_power">Выключение</string>
-    <string name="global_actions_restart">Перезашрузка</string>
+    <string name="global_actions_restart">Перезагрузка</string>
     <string name="global_actions_airplane">Режим полета</string>
     <string name="global_actions_settings">Настройки</string>
     <string name="global_actions_lockdown">Блокировка</string>
