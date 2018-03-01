@@ -247,17 +247,18 @@
 
     <!-- Supported accent packages -->
     <string-array name="accent_packages" translatable="false">
-        <item>org.lineageos.overlay.accent.red</item>
-        <item>org.lineageos.overlay.accent.pink</item>
-        <item>org.lineageos.overlay.accent.purple</item>
-        <item>org.lineageos.overlay.accent.blue</item>
-        <item>org.lineageos.overlay.accent.cyan</item>
-        <item>org.lineageos.overlay.accent.pixel</item>
-        <item>org.lineageos.overlay.accent.green</item>
-        <item>org.lineageos.overlay.accent.orange</item>
-        <item>org.lineageos.overlay.accent.yellow</item>
-        <item>org.lineageos.overlay.accent.brown</item>
-        <item>org.lineageos.overlay.accent.black</item>
+        <item>mx.elixir.accent.red</item>
+        <item>mx.elixir.accent.pink</item>
+        <item>mx.elixir.accent.purple</item>
+        <item>mx.elixir.accent.blue</item>
+        <item>mx.elixir.accent.cyan</item>
+        <item>mx.elixir.accent.pixel</item>
+        <item>mx.elixir.accent.green</item>
+        <item>mx.elixir.accent.orange</item>
+        <item>mx.elixir.accent.yellow</item>
+        <item>mx.elixir.accent.brown</item>
+        <item>mx.elixir.accent.black</item>
+        <item>mx.elixir.accent.white</item>
     </string-array>
 
 </resources>
