@@ -250,7 +250,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
         Settings.System.putInt(getContext().getContentResolver(),
                 Settings.System.THEME_GLOBAL_STYLE, value);
 
-        setStyleIcon(value);
+        setupStylePref();
         return true;
     }
 
