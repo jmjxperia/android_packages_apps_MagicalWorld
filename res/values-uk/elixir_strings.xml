@@ -231,5 +231,7 @@
     <string name="style_accent_default_name">За замовчуванням</string>
     <string name="style_restart_title">Перезапустити SystemUI</string>
     <string name="style_restart_summary">Перезапустіть SystemUI, якщо застосована тема викликає проблеми</string>
+    <string name="theme_applied_toast">Тема застосована.</string>
+    <string name="applying_theme_toast">Застосування теми, зачекайте...</string>
 
 </resources>

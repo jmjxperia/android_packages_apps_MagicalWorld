@@ -231,5 +231,7 @@
     <string name="style_accent_default_name">По умолчанию</string>
     <string name="style_restart_title">Перезапустить SystemUI</string>
     <string name="style_restart_summary">Перезапустите SystemUI, если примененная тема вызывает проблемы</string>
+    <string name="theme_applied_toast">Тема применена.</string>
+    <string name="applying_theme_toast">Применение темы, подождите...</string>
 
 </resources>

@@ -26,6 +26,7 @@ import static android.content.Context.ACTIVITY_SERVICE;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
@@ -48,11 +49,14 @@ import android.support.annotation.Nullable;
 import android.support.v7.graphics.Palette;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
+
+import com.android.settingslib.drawer.SettingsDrawerActivity;
 
 import mx.elixir.magicalworld.fragments.style.models.Accent;
 import mx.elixir.magicalworld.fragments.style.models.Style;
@@ -206,8 +210,6 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private void applyStyle(Style style) {
         int value = style.isLight() ? INDEX_LIGHT : INDEX_DARK;
-        Settings.System.putInt(getContext().getContentResolver(),
-            Settings.System.THEME_GLOBAL_STYLE, value);
 
         onStyleChange(mStylePref, value);
         onAccentSelected(style.getAccent());
@@ -235,11 +237,42 @@ public class StylePreferences extends SettingsPreferenceFragment {
             return false;
         }
 
+        int oldValue = Settings.System.getInt(getContext().getContentResolver(),
+            Settings.System.THEME_GLOBAL_STYLE, INDEX_WALLPAPER);
+
+        if (oldValue != value){
+            try {
+                reload();
+            }catch (Exception ignored){
+            }
+        }
+
         Settings.System.putInt(getContext().getContentResolver(),
                 Settings.System.THEME_GLOBAL_STYLE, value);
 
         setStyleIcon(value);
         return true;
+    }
+
+    private void reload(){
+        Intent intent2 = new Intent(Intent.ACTION_MAIN);
+        intent2.addCategory(Intent.CATEGORY_HOME);
+        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getContext().startActivity(intent2);
+        Toast.makeText(getContext(), R.string.applying_theme_toast, Toast.LENGTH_SHORT).show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+              @Override
+              public void run() {
+                  Intent intent = new Intent(Intent.ACTION_MAIN);
+                  intent.setClassName("com.android.settings",
+                        "com.android.settings.Settings$StylePreferencesActivity");
+                  intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                  intent.putExtra(SettingsDrawerActivity.EXTRA_SHOW_MENU, true);
+                  getContext().startActivity(intent);
+                  Toast.makeText(getContext(), R.string.theme_applied_toast, Toast.LENGTH_SHORT).show();
+              }
+        }, 2000);
     }
 
     private void setStyleIcon(int value) {
