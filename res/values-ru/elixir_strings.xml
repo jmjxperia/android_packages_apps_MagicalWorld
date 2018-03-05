@@ -242,5 +242,7 @@
     <string name="qs_rows_landscape_title">Количество плиток в строке (альбом.)</string>
     <string name="qs_columns_portrait_title">Количество плиток в столбце (портрет.)</string>
     <string name="qs_columns_landscape_title">Количество плиток в столбце (альбом.)</string>
+    <string name="qs_tile_title_visibility_title">Подписи плиток</string>
+    <string name="qs_tile_title_visibility_summary">Отображать подписи плиток в панели быстрых настроек</string>
 
 </resources>
