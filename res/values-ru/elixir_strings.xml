@@ -22,6 +22,7 @@
     <string name="statusbar_title">Строка состояния</string>
     <string name="lockscreen_category">Экран блокировки</string>
     <string name="system_category">Система</string>
+    <string name="quicksettings_title">Быстрые настройки</string>
 
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Редактирование иконок</string>
@@ -234,5 +235,12 @@
     <string name="style_restart_summary">Перезапустите SystemUI, если примененная тема вызывает проблемы</string>
     <string name="theme_applied_toast">Тема применена.</string>
     <string name="applying_theme_toast">Применение темы, подождите...</string>
+
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">Строки и столбцы</string>
+    <string name="qs_rows_portrait_title">Количество плиток в строке (портрет.)</string>
+    <string name="qs_rows_landscape_title">Количество плиток в строке (альбом.)</string>
+    <string name="qs_columns_portrait_title">Количество плиток в столбце (портрет.)</string>
+    <string name="qs_columns_landscape_title">Количество плиток в столбце (альбом.)</string>
 
 </resources>
