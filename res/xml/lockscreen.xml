@@ -16,6 +16,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/lockscreen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <com.android.settings.elixir.SystemSettingSwitchPreference
+        android:key="lockscreen_scramble_pin_layout"
+        android:title="@string/unlock_scramble_pin_layout_title"
+        android:summary="@string/unlock_scramble_pin_layout_summary"
+        android:defaultValue="false" />
     
     <com.android.settings.elixir.SystemSettingSwitchPreference
         android:key="double_tap_sleep_anywhere"
