@@ -18,7 +18,7 @@
 	<string name="elixir_settings_title">MagicalWorld</string>
 
     <string name="button_title">Buttons</string>
-    <string name="recents_title">Recents apps</string>
+    <string name="recents_title">Recents</string>
     <string name="statusbar_title">Status bar</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="system_category">System</string>
@@ -245,4 +245,10 @@
     <string name="qs_tile_title_visibility_title">QS tile titles</string>
     <string name="qs_tile_title_visibility_summary">Show quick settings tiles titles</string>
 
+    <!-- Memory bar -->
+    <string name="recents_show_membar_title">Memory bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
+
 </resources>
+
+
