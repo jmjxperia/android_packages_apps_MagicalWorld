@@ -228,7 +228,7 @@
     <string name="style_accent_configuration_positive">Продолжить</string>
     <string name="style_automagic_title">Автомагия</string>
     <string name="style_automagic_description">Настройка темы в соответствии с обоями</string>
-    <string name="style_automagic_dialog_content">Предлагаемая тема: <b>%1$s</b> с <b>%2$s</b> акцентом.\nБЖелаете применить ее?</string>
+    <string name="style_automagic_dialog_content">Предлагаемая тема: <b>%1$s</b> с <b>%2$s</b> акцентом.\nЖелаете применить ее?</string>
     <string name="style_automagic_dialog_positive">Применить</string>
     <string name="style_accent_default_name">По умолчанию</string>
     <string name="style_restart_title">Перезапустить SystemUI</string>
