@@ -253,6 +253,10 @@
     <string name="unlock_scramble_pin_layout_title">Перемішувати кнопки</string>
     <string name="unlock_scramble_pin_layout_summary">Переставляти кнопки введення PIN-коду у випадковому порядку</string>
 
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
+    <string name="unlock_quick_unlock_control_summary">Розблоковувати, коли введено вірний PIN-код/пароль</string>
+
     <!-- Heads up -->
     <string name="heads_up_notifications">Виринаючі повідомлення</string>
     <string name="summary_heads_up_enabled">Виринаючі повідомлення ввімкнені</string>
