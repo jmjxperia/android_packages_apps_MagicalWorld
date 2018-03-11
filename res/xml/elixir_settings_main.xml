@@ -17,12 +17,12 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/elixir_settings_title" >
 
-     <!-- Status Bar -->
-         <PreferenceScreen
-             android:key="statusbar_category"
-             android:title="@string/statusbar_title"
-             android:fragment="mx.elixir.magicalworld.fragments.StatusBarSettings" 
-             android:icon="@drawable/ic_settings_statusbar"/>
+        <!-- Status Bar -->
+        <PreferenceScreen
+            android:key="statusbar_category"
+            android:title="@string/statusbar_title"
+            android:fragment="mx.elixir.magicalworld.fragments.StatusBarSettings" 
+            android:icon="@drawable/ic_settings_statusbar"/>
 
         <!-- Quick Settings panel -->
         <PreferenceScreen
@@ -31,35 +31,43 @@
             android:fragment="mx.elixir.magicalworld.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
-      <!-- Buttons -->
-         <PreferenceScreen
-             android:key="buttonsettings_category"
-             android:title="@string/button_title"
-             android:fragment="mx.elixir.magicalworld.fragments.ButtonSettings"
-             android:icon="@drawable/ic_settings_buttons"/>
+        <!-- Buttons -->
+        <PreferenceScreen
+            android:key="buttonsettings_category"
+            android:title="@string/button_title"
+            android:fragment="mx.elixir.magicalworld.fragments.ButtonSettings"
+            android:icon="@drawable/ic_settings_buttons"/>
  
-      <!-- Recents -->
-         <PreferenceScreen
-             android:key="recents_category"
-             android:title="@string/recents_title"
-             android:fragment="mx.elixir.magicalworld.fragments.RecentsSettings"
-             android:icon="@drawable/ic_settings_recents"/>
+        <!-- Recents -->
+        <PreferenceScreen
+            android:key="recents_category"
+            android:title="@string/recents_title"
+            android:fragment="mx.elixir.magicalworld.fragments.RecentsSettings"
+            android:icon="@drawable/ic_settings_recents"/>
 
-      <!-- lockscreen -->
+        <!-- Notifications -->
         <Preference
-        android:fragment="mx.elixir.magicalworld.fragments.Lockscreen"
-        android:icon="@drawable/ic_lockscreen"
-        android:title="@string/lockscreen_category" />
+            android:key="notifications_category"
+            android:title="@string/notifications_title"
+            android:fragment="mx.elixir.magicalworld.fragments.NotificationSettings"
+            android:icon="@drawable/ic_settings_notification"/>
 
-      <!-- system -->
+        <!-- Lockscreen -->
         <Preference
-        android:fragment="mx.elixir.magicalworld.fragments.System"
-        android:icon="@drawable/ic_system"
-        android:title="@string/system_category" />
+            android:fragment="mx.elixir.magicalworld.fragments.Lockscreen"
+            android:icon="@drawable/ic_lockscreen"
+            android:title="@string/lockscreen_category" />
 
-    <Preference
-        android:fragment="mx.elixir.magicalworld.fragments.style.StylePreferences"
-        android:icon="@drawable/ic_settings_style"
-        android:title="@string/style_title" />
+        <!-- System -->
+        <Preference
+            android:fragment="mx.elixir.magicalworld.fragments.System"
+            android:icon="@drawable/ic_system"
+            android:title="@string/system_category" />
+
+        <!-- Style -->
+        <Preference
+            android:fragment="mx.elixir.magicalworld.fragments.style.StylePreferences"
+            android:icon="@drawable/ic_settings_style"
+            android:title="@string/style_title" />
 
 </PreferenceScreen>

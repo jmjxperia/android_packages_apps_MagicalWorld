@@ -253,4 +253,15 @@
     <string name="unlock_scramble_pin_layout_title">Перемішувати кнопки</string>
     <string name="unlock_scramble_pin_layout_summary">Переставляти кнопки введення PIN-коду у випадковому порядку</string>
 
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Виринаючі повідомлення</string>
+    <string name="summary_heads_up_enabled">Виринаючі повідомлення ввімкнені</string>
+    <string name="summary_heads_up_disabled">Виринаючі повідомлення вимкнені</string>
+    <string name="add_heads_up_package">Додати додаток</string>
+    <string name="add_heads_up_stoplist_summary">Заборонити виринаючі повідомлення коли відкриті ці додатки</string>
+    <string name="heads_up_stoplist_title">Список додатків</string>
+    <string name="profile_choose_app">Вибрати додаток</string>
+    <string name="dialog_delete_title">Видалити</string>
+    <string name="dialog_delete_message">Видалити вибраний елемент?</string>
+
 </resources>
