@@ -270,4 +270,11 @@
     <string name="dialog_delete_title">Видалити</string>
     <string name="dialog_delete_message">Видалити вибраний елемент?</string>
 
+    <!-- Statusbar ticker -->
+    <string name="ticker_screen_title">Рухомий рядок</string>
+    <string name="ticker_mode_title">Рухомий рядок в рядку стану</string>
+    <string name="ticker_disabled">Вимкнено</string>
+    <string name="ticker_enabled">Рухомий рядок сповіщень</string>
+    <string name="ticker_media_enabled">Рухомий рядок сповіщень і музики</string>
+
 </resources>

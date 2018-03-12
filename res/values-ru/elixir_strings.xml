@@ -270,4 +270,11 @@
     <string name="dialog_delete_title">Удалить</string>
     <string name="dialog_delete_message">Удалить выбранный элемент?</string>
 
+    <!-- Statusbar ticker -->
+    <string name="ticker_screen_title">Бегущая строка</string>
+    <string name="ticker_mode_title">Бегущая строка в строке состояния</string>
+    <string name="ticker_disabled">Не отображать</string>
+    <string name="ticker_enabled">Бегущая строка уведомлений</string>
+    <string name="ticker_media_enabled">Бегущая строка уведомлений и музыки</string>
+
 </resources>
