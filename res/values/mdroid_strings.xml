@@ -296,6 +296,7 @@
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Transparency</string>
 
+    <string name="fprint_category">Fingerprint settings</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>

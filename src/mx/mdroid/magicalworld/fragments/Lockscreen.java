@@ -19,6 +19,7 @@ package mx.mdroid.magicalworld.fragments;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
@@ -39,6 +40,10 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Lockscreen";
 
+    private static final String FP_CAT = "lockscreen_fp_category";
+
+    private FingerprintManager mFingerprintManager;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +53,14 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
 
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        PreferenceCategory fingerprintCategory = (PreferenceCategory) prefSet.findPreference(FP_CAT);
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+
+        if (mFingerprintManager != null && !mFingerprintManager.isHardwareDetected()) {
+            prefSet.removePreference(fingerprintCategory);
+        }
     }
 
     @Override
