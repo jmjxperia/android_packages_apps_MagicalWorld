@@ -379,6 +379,9 @@
     <string name="lockscreen_qs_disabled_title">Швидкі налаштування на екрані блокування</string>
     <string name="lockscreen_qs_disabled_summary">Вимкнути панель швидких налаштувань на захищеному екрані блокування</string>
 
-    <string name="units_kbps">КБ/с</string>
+    <string name="units_kbps">" КБ/с"</string>
+    <string name="units_ms">" мс"</string>
+
+    <string name="screenshot_delay_title">Затримка скріншота</string>
 
 </resources>

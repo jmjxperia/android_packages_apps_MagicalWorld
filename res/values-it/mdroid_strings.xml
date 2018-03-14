@@ -142,4 +142,6 @@
     <string name="torch_power_button_gesture_dt_toast">Salto al gesto della fotocamera è ora disattivato</string>
     <string name="torch_power_button_gesture_lp">Pressione prolungata sul pulsante alimentazione per attivare la torcia</string>
 
+    <string name="screenshot_delay_title">Ritardo Screenshot</string>
+
 </resources>
