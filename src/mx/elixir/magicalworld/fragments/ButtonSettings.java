@@ -168,6 +168,34 @@ public class ButtonSettings extends ActionFragment implements
                     mButtonBrightness_sw.setOnPreferenceChangeListener(this);
                 }
             }
+
+            if (keysDisabled == 1) {
+                if (mButtonBrightness_sw != null) {
+                    mButtonBrightness_sw.setEnabled(false);
+                }
+                if (mButtonBrightness != null) {
+                    mButtonBrightness.setEnabled(false);
+                }
+                if (mBacklightTimeout != null) {
+                    mBacklightTimeout.setEnabled(false);
+                }
+                if (mButtonBacklightOnTouch != null) {
+                    mButtonBacklightOnTouch.setEnabled(false);
+                }
+            } else {
+                if (mButtonBrightness_sw != null) {
+                    mButtonBrightness_sw.setEnabled(true);
+                }
+                if (mButtonBrightness != null) {
+                    mButtonBrightness.setEnabled(true);
+                }
+                if (mBacklightTimeout != null) {
+                    mBacklightTimeout.setEnabled(true);
+                }
+                if (mButtonBacklightOnTouch != null) {
+                    mButtonBacklightOnTouch.setEnabled(true);
+                }
+            }
         }
 
         // bits for hardware keys present on device
