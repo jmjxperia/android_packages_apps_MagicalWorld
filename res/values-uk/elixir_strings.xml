@@ -281,4 +281,8 @@
     <string name="volume_keys_control_media_stream_title">Регулювання гучності медіа</string>
     <string name="volume_keys_control_media_stream_summary">Примусово використовувати кнопки гучності для регулювання гучності медіа</string>
 
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">Попередження в швидких налаштуваннях</string>
+    <string name="qs_footer_warnings_summary">Показувати попередження внизу панелі швидких налаштувань, коли мережа контролюється зовнішніми додатками або VPN</string>
+
 </resources>
