@@ -277,4 +277,8 @@
     <string name="ticker_enabled">Бегущая строка уведомлений</string>
     <string name="ticker_media_enabled">Бегущая строка уведомлений и музыки</string>
 
+    <!-- Volume key controls media stream -->
+    <string name="volume_keys_control_media_stream_title">Регулировка громкости медиа</string>
+    <string name="volume_keys_control_media_stream_summary">Принудительно использовать кнопки громкости для регулировки громкости медиа</string>
+
 </resources>

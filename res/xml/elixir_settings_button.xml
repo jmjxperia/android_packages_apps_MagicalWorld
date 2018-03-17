@@ -18,26 +18,31 @@
         android:title="@string/button_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-       
-     <Preference
-             android:title="@string/navbar_tuner_title" >
-             <intent android:action="android.intent.action.MAIN"
-                 android:targetPackage="com.android.systemui"
-                 android:targetClass="com.android.systemui.tuner.NavBarActivity" />
-     </Preference>
+    <Preference
+        android:title="@string/navbar_tuner_title" >
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.NavBarActivity" />
+    </Preference>
 
-      <com.android.settings.elixir.SystemSettingSwitchPreference
-         android:key="pixel_nav_animation"
-         android:title="@string/pixel_navbar_anim_title"
-         android:summary="@string/pixel_navbar_anim_summary"
-         android:defaultValue="true" />
+    <com.android.settings.elixir.SystemSettingSwitchPreference
+        android:key="pixel_nav_animation"
+        android:title="@string/pixel_navbar_anim_title"
+        android:summary="@string/pixel_navbar_anim_summary"
+        android:defaultValue="true" />
 
-      <com.android.settings.elixir.SystemSettingSwitchPreference
+    <com.android.settings.elixir.SystemSettingSwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons_title"
         android:summary="@string/swap_volume_buttons_summary" />
 
-     <com.android.settings.elixir.SystemSettingSwitchPreference
+    <com.android.settings.elixir.SystemSettingSwitchPreference
+        android:key="volume_keys_control_media_stream"
+        android:title="@string/volume_keys_control_media_stream_title"
+        android:summary="@string/volume_keys_control_media_stream_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.elixir.SystemSettingSwitchPreference
         android:key="volume_button_music_control"
         android:title="@string/volume_rocker_music_controls_title"
         android:summary="@string/volume_rocker_music_controls_summary"
@@ -58,10 +63,10 @@
         android:persistent="false" />
 
     <ListPreference
-       android:key="torch_power_button_gesture"
-       android:title="@string/torch_power_button_gesture_title"
-       android:entries="@array/torch_power_button_gesture_entries"
-       android:entryValues="@array/torch_power_button_gesture_values" />
+        android:key="torch_power_button_gesture"
+        android:title="@string/torch_power_button_gesture_title"
+        android:entries="@array/torch_power_button_gesture_entries"
+        android:entryValues="@array/torch_power_button_gesture_values" />
 
     <PreferenceCategory
         android:key="hardware_keys"

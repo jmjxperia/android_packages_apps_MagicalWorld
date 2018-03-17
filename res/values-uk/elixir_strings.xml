@@ -277,4 +277,8 @@
     <string name="ticker_enabled">Рухомий рядок сповіщень</string>
     <string name="ticker_media_enabled">Рухомий рядок сповіщень і музики</string>
 
+    <!-- Volume key controls media stream -->
+    <string name="volume_keys_control_media_stream_title">Регулювання гучності медіа</string>
+    <string name="volume_keys_control_media_stream_summary">Примусово використовувати кнопки гучності для регулювання гучності медіа</string>
+
 </resources>
