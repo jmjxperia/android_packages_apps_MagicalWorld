@@ -48,6 +48,7 @@ public class ButtonSettings extends ActionFragment implements
 
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+    private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
 
     //Keys
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
@@ -77,6 +78,7 @@ public class ButtonSettings extends ActionFragment implements
     private CustomSeekBarPreference mButtonBrightness;
     private SwitchPreference mButtonBrightness_sw;
     private SwitchPreference mButtonBacklightOnTouch;
+    private SwitchPreference mHomeAnswerCall;
 
     private ListPreference mTorchPowerButton;
     private ListPreference mVolumeKeyCursorControl;
@@ -99,6 +101,9 @@ public class ButtonSettings extends ActionFragment implements
                 Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
         mVolumeKeyCursorControl = initActionList(KEY_VOLUME_KEY_CURSOR_CONTROL,
                 cursorControlAction);
+
+        // Home button answers calls.
+        mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
 
         if (!ElixirUtils.deviceSupportsFlashLight(getContext())) {
             Preference toRemove = prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
@@ -182,6 +187,9 @@ public class ButtonSettings extends ActionFragment implements
                 if (mButtonBacklightOnTouch != null) {
                     mButtonBacklightOnTouch.setEnabled(false);
                 }
+                if (mHomeAnswerCall != null) {
+                    mHomeAnswerCall.setEnabled(false);
+                } 
             } else {
                 if (mButtonBrightness_sw != null) {
                     mButtonBrightness_sw.setEnabled(true);
@@ -194,6 +202,9 @@ public class ButtonSettings extends ActionFragment implements
                 }
                 if (mButtonBacklightOnTouch != null) {
                     mButtonBacklightOnTouch.setEnabled(true);
+                }
+                if (mHomeAnswerCall != null) {
+                    mHomeAnswerCall.setEnabled(true);
                 }
             }
         }
@@ -230,6 +241,11 @@ public class ButtonSettings extends ActionFragment implements
         // home key
         if (!hasHomeKey) {
             prefSet.removePreference(homeCategory);
+        } else {
+            if (!Utils.isVoiceCapable(getActivity())) {
+                homeCategory.removePreference(mHomeAnswerCall);
+                mHomeAnswerCall = null;
+            }
         }
 
         // App switch key (recents)
@@ -262,6 +278,16 @@ public class ButtonSettings extends ActionFragment implements
     @Override
     public void onResume() {
         super.onResume();
+
+        // Home button answers calls.
+        if (mHomeAnswerCall != null) {
+            final int incallHomeBehavior = Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.RING_HOME_BUTTON_BEHAVIOR,
+                    Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_DEFAULT);
+            final boolean homeButtonAnswersCall =
+                (incallHomeBehavior == Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
+            mHomeAnswerCall.setChecked(homeButtonAnswersCall);
+        }
     }
 
     @Override
@@ -323,6 +349,9 @@ public class ButtonSettings extends ActionFragment implements
             if (mButtonBacklightOnTouch != null) {
                 mButtonBacklightOnTouch.setEnabled(!value);
             }
+            if (mHomeAnswerCall != null) {
+                mHomeAnswerCall.setEnabled(!value);
+            }
             return true;
         } else if (preference == mBacklightTimeout) {
             String BacklightTimeout = (String) objValue;
@@ -353,7 +382,24 @@ public class ButtonSettings extends ActionFragment implements
     }
 
     @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mHomeAnswerCall) {
+            handleToggleHomeButtonAnswersCallPreferenceClick();
+            return true;
+        }
+
+        return super.onPreferenceTreeClick(preference);
+    }
+
+    @Override
     protected boolean usesExtendedActionsList() {
         return true;
+    }
+
+    private void handleToggleHomeButtonAnswersCallPreferenceClick() {
+        Settings.Secure.putInt(getContentResolver(),
+                Settings.Secure.RING_HOME_BUTTON_BEHAVIOR, (mHomeAnswerCall.isChecked()
+                        ? Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER
+                        : Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
     }
 }

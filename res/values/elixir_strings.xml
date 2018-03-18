@@ -289,6 +289,10 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
+    <!-- Home button answers calls -->
+    <string name="home_answer_call_title">Answer call</string>
+    <string name="home_answer_call_summary">Answer incoming calls by pressing the home button</string>
+
 </resources>
 
 
