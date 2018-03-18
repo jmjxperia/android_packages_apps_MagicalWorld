@@ -22,7 +22,7 @@
         android:key="qs_rows_columns"
         android:fragment="mx.elixir.magicalworld.fragments.QsRowsColumns"
         android:title="@string/qs_rows_columns_title"/>
- 
+
     <com.android.settings.elixir.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"
@@ -34,5 +34,13 @@
         android:title="@string/qs_footer_warnings_title"
         android:summary="@string/qs_footer_warnings_summary"
         android:defaultValue="true" />
+
+    <com.android.settings.elixir.CustomSeekBarPreference
+        android:key="qs_panel_alpha"
+        android:title="@string/qs_panel_alpha_title"
+        android:max="255"
+        settings:min="0"
+        settings:units=""
+        android:persistent="false" />
 
 </PreferenceScreen>
