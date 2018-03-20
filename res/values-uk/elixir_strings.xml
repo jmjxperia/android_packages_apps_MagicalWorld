@@ -293,4 +293,7 @@
     <string name="home_answer_call_title">Відповісти на виклик</string>
     <string name="home_answer_call_summary">Відповідати на вхідний виклик натисненням кнопки «Додому»</string>
 
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Прозорість</string>
+
 </resources>
