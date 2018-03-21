@@ -222,6 +222,7 @@
     <string name="style_global_entry_automatic">Автоматично (шпалери)</string>
     <string name="style_global_entry_light">Світла</string>
     <string name="style_global_entry_dark">Темна</string>
+    <string name="style_global_entry_black">Чорна</string>
     <string name="style_global_entry_time">Автоматично (день/ніч)</string>
     <string name="style_accent_title">Колір акценту</string>
     <string name="style_accent_configuration_not_supported">Поточний акцент не сумісний із вибраною темою. Щоб продовжити, потрібно вибрати інший акцент, бажаєте продовжити?</string>

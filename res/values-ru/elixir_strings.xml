@@ -222,6 +222,7 @@
     <string name="style_global_entry_automatic">Автоматически (обои)</string>
     <string name="style_global_entry_light">Светлая</string>
     <string name="style_global_entry_dark">Темная</string>
+    <string name="style_global_entry_black">Черная</string>
     <string name="style_global_entry_time">Автоматически (день/ночь)</string>
     <string name="style_accent_title">Цвет акцента</string>
     <string name="style_accent_configuration_not_supported">Текущий акцент не совместим с выбранной темой. Чтобы продолжить, необходимо выбрать другой акцент, желаете продолжить?</string>

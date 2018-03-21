@@ -75,6 +75,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
     private static final int INDEX_TIME = 1;
     private static final int INDEX_LIGHT = 2;
     private static final int INDEX_DARK = 3;
+    private static final int INDEX_BLACK = 4;
 
     private Preference mStylePref;
     private Preference mAccentPref;
@@ -202,6 +203,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
             case INDEX_DARK:
                 mStyleStatus = StyleStatus.DARK_ONLY;
                 break;
+            case INDEX_BLACK:
+                mStyleStatus = StyleStatus.BLACK_ONLY;
+                break;
             default:
                 mStyleStatus = StyleStatus.DYNAMIC;
                 break;
@@ -287,6 +291,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
             case INDEX_DARK:
                 icon = R.drawable.ic_style_dark;
                 break;
+            case INDEX_BLACK:
+                icon = R.drawable.ic_style_black;
+                break;
             default:
                 icon = R.drawable.ic_style_auto;
                 break;
@@ -312,6 +319,8 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 return value == INDEX_LIGHT;
             case DARK_ONLY:
                 return value == INDEX_DARK;
+            case BLACK_ONLY:
+                return value == INDEX_BLACK;
             case DYNAMIC:
             default: // Never happens, but compilation fails without this
                 return true;
@@ -326,6 +335,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 break;
             case INDEX_DARK:
                 proposedStatus = StyleStatus.DARK_ONLY;
+                break;
+            case INDEX_BLACK:
+                proposedStatus = StyleStatus.BLACK_ONLY;
                 break;
             default:
                 proposedStatus = StyleStatus.DYNAMIC;
