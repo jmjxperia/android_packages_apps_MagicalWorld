@@ -229,7 +229,7 @@
     <string name="style_accent_configuration_positive">Продовжити</string>
     <string name="style_automagic_title">Автомагія</string>
     <string name="style_automagic_description">Налаштування теми відповідно до шпалер</string>
-    <string name="style_automagic_dialog_content">Пропонована тема: <b>%1$s</b> с <b>%2$s</b> акцентом.\nБажаєте застосувати її?</string>
+    <string name="style_automagic_dialog_content">Пропонована тема: <b>%1$s</b> з <b>%2$s</b> акцентом.\nБажаєте застосувати її?</string>
     <string name="style_automagic_dialog_positive">Застосувати</string>
     <string name="style_accent_default_name">За замовчуванням</string>
     <string name="style_restart_title">Перезапустити SystemUI</string>
