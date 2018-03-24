@@ -297,4 +297,8 @@
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Прозорість</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Вібрація при розпізнаванні відбитку пальця</string>
+    <string name="fprint_sucess_vib_summary">Вібрувати при успішному розпізнаванні відбитку пальця</string>
+
 </resources>
