@@ -321,6 +321,10 @@
     <string name="volbtn_wake_device_title">Volume button wake</string>
     <string name="volbtn_wake_device_summary">Pressing either of the volume buttons will wake your device</string>
 
+    <!-- System default animation -->
+    <string name="system_default_animation_title">Android P animation style</string>
+    <string name="system_default_animation_summary">Enable Android P \"Default\" animations</string>
+
 </resources>
 
 

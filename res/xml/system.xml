@@ -63,4 +63,10 @@
         android:summary="@string/volbtn_wake_device_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.elixir.GlobalSettingSwitchPreference
+        android:key="system_default_animation"
+        android:title="@string/system_default_animation_title"
+        android:summary="@string/system_default_animation_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
