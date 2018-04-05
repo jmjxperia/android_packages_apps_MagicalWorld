@@ -317,4 +317,12 @@
 
     <string name="volume_and_power_buttons_category">Кнопки громкости и питания</string>
 
+    <!-- Volume rocker wake -->
+    <string name="volbtn_wake_device_title">Пробуждение кнопками громкости</string>
+    <string name="volbtn_wake_device_summary">Нажатие одной из кнопок громкости пробуждает устройство</string>
+
+    <!-- System default animation -->
+    <string name="system_default_animation_title">Анимация в стиле Android P</string>
+    <string name="system_default_animation_summary">Включение стандартной анимации из Android P</string>
+
 </resources>
