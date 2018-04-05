@@ -55,5 +55,12 @@
         android:title="@string/pocket_judge_title"
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" />
+ 
+  <!-- Wake device on volume buttons press -->
+    <com.android.settings.elixir.SystemSettingSwitchPreference
+        android:key="volume_wake_screen"
+        android:title="@string/volbtn_wake_device_title"
+        android:summary="@string/volbtn_wake_device_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>

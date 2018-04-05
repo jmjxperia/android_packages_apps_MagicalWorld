@@ -317,6 +317,10 @@
 
     <string name="volume_and_power_buttons_category">Volume and Power buttons</string>
 
+    <!-- Volume rocker wake -->
+    <string name="volbtn_wake_device_title">Volume button wake</string>
+    <string name="volbtn_wake_device_summary">Pressing either of the volume buttons will wake your device</string>
+
 </resources>
 
 
