@@ -58,7 +58,7 @@
  
   <!-- Wake device on volume buttons press -->
     <com.android.settings.elixir.SystemSettingSwitchPreference
-        android:key="volume_wake_screen"
+        android:key="volume_rocker_wake"
         android:title="@string/volbtn_wake_device_title"
         android:summary="@string/volbtn_wake_device_summary"
         android:defaultValue="false" />
