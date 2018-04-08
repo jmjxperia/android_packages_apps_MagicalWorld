@@ -58,6 +58,13 @@
             android:summary="@string/volume_keys_control_media_stream_summary"
             android:defaultValue="false" />
 
+        <!-- Wake device on volume buttons press -->
+        <com.android.settings.elixir.SystemSettingSwitchPreference
+            android:key="volume_wake_screen"
+            android:title="@string/volbtn_wake_device_title"
+            android:summary="@string/volbtn_wake_device_summary"
+            android:defaultValue="false" />
+
         <com.android.settings.elixir.SystemSettingSwitchPreference
             android:key="volume_button_music_control"
             android:title="@string/volume_rocker_music_controls_title"
