@@ -21,14 +21,23 @@ import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.development.DevelopmentSettings;
 
 public class MagicalWorld extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        final String KEY_DEVICE_PART = "device_part";
+        final String KEY_DEVICE_PART_PACKAGE_NAME = "com.elixir.settings.device";
+
         addPreferencesFromResource(R.xml.elixir_settings_main);
         PreferenceScreen prefScreen = getPreferenceScreen();
+
+        // DeviceParts
+        if (!DevelopmentSettings.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
+            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_PART));
+        }
     }
 
     @Override

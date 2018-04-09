@@ -23,6 +23,7 @@
     <string name="lockscreen_category">Екран блокування</string>
     <string name="system_category">Система</string>
     <string name="quicksettings_title">Швидкі налаштування</string>
+    <string name="device_part_title">Налаштування пристрою</string>
 
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Редагування іконок</string>
