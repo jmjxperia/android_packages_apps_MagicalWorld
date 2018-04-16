@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Nitrogen OS
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- clear all recents button location -->
+    <string-array name="recents_clear_all_location_entries" translatable="false">
+        <item>@string/recents_clear_all_location_top_right</item>
+        <item>@string/recents_clear_all_location_top_left</item>
+        <item>@string/recents_clear_all_location_top_center</item>
+        <item>@string/recents_clear_all_location_bottom_right</item>
+        <item>@string/recents_clear_all_location_bottom_left</item>
+        <item>@string/recents_clear_all_location_bottom_center</item>
+    </string-array>
+
+    <string-array name="recents_clear_all_location_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Immersive Recents -->
+    <string-array name="immersive_recents_entries">
+        <item>@string/immersive_recents_default</item>
+        <item>@string/immersive_recents_fullscreen</item>
+        <item>@string/immersive_recents_statusbar</item>
+        <item>@string/immersive_recents_navbar</item>
+    </string-array>
+
+    <string-array name="immersive_recents_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Statusbar Clock options -->
+    <string-array name="clock_style_entries" translatable="false">
+        <item>@string/right_clock</item>
+        <item>@string/center_clock</item>
+        <item>@string/left_clock</item>
+    </string-array>
+
+    <string-array name="clock_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="entries_status_bar_am_pm">
+        <item>@string/am_pm_clock_none</item>
+        <item>@string/am_pm_clock_small</item>
+        <item>@string/am_pm_clock_normal</item>
+    </string-array>
+
+    <string-array name="values_status_bar_am_pm" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="clock_date_display_entries">
+        <item>@string/clock_date_display_none</item>
+        <item>@string/clock_date_display_small</item>
+        <item>@string/clock_date_display_normal</item>
+    </string-array>
+
+    <string-array name="clock_date_display_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="clock_date_style_entries">
+        <item>@string/clock_date_style_normal</item>
+        <item>@string/clock_date_style_lowercase</item>
+        <item>@string/clock_date_style_uppercase</item>
+    </string-array>
+
+    <string-array name="clock_date_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="clock_date_format_entries_values">
+        <item>dd/MM/yy</item>
+        <item>MM/dd/yy</item>
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-dd-MM</item>
+        <item>dd-MM-yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>MMM dd</item>
+        <item>MMM dd, yyyy</item>
+        <item>MMMM dd, yyyy</item>
+        <item>EEE</item>
+        <item>EEE dd</item>
+        <item>EEE dd/MM</item>
+        <item>EEE MM/dd</item>
+        <item>EEE dd MMM</item>
+        <item>EEE MMM dd</item>
+        <item>EEE MMMM dd</item>
+        <item>EEEE dd/MM</item>
+        <item>EEEE MM/dd</item>
+        <item>@string/clock_date_format_custom</item>
+    </string-array>
+
+    <!-- Screen off animation -->
+    <string-array name="screen_off_animation_entries">
+        <item>@string/screen_off_animation_default</item>
+        <item>@string/screen_off_animation_crt</item>
+        <item>@string/screen_off_animation_scale</item>
+    </string-array>
+
+    <string-array name="screen_off_animation_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Torch Power button gestures -->
+    <string-array name="torch_power_button_gesture_entries">
+        <item>@string/torch_power_button_gesture_none</item>
+        <item>@string/torch_power_button_gesture_dt</item>
+        <item>@string/torch_power_button_gesture_lp</item>
+    </string-array>
+
+    <string-array name="torch_power_button_gesture_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Volume key cursor control -->
+    <string-array name="volbtn_cursor_control_entries" translatable="false">
+        <item>@string/volbtn_cursor_control_off</item>
+        <item>@string/volbtn_cursor_control_on</item>
+        <item>@string/volbtn_cursor_control_on_reverse</item>
+    </string-array>
+
+    <string-array name="volbtn_cursor_control_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Battery Styles -->
+    <string-array name="battery_style_entries" translatable="false">
+        <item>@string/battery_style_port</item>
+<!--        <item>@string/battery_style_land</item>-->
+        <item>@string/battery_style_circle</item>
+        <item>@string/battery_style_dotted_circle</item>
+        <item>@string/battery_style_big_circle</item>
+        <item>@string/battery_style_big_dotted_circle</item>
+        <item>@string/battery_style_square</item>
+        <item>@string/battery_style_text</item>
+        <item>@string/battery_style_hidden</item>
+    </string-array>
+
+    <string-array name="battery_style_values" translatable="false">
+        <item>0</item>
+<!--        <item>1</item>-->
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <!-- Battery Percent -->
+    <string-array name="battery_percent_entries" translatable="false">
+        <item>@string/battery_percent_none</item>
+        <item>@string/battery_percent_outside</item>
+        <item>@string/battery_percent_inside</item>
+    </string-array>
+
+    <string-array name="battery_percent_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!--- Buttons backlight timeout -->
+    <string-array name="backlight_timeout_entries">
+        <item>@string/backlight_timeout_on</item>
+        <item>@string/backlight_timeout_3s</item>
+        <item>@string/backlight_timeout_default</item>
+        <item>@string/backlight_timeout_10s</item>
+        <item>@string/backlight_timeout_15s</item>
+        <item>@string/backlight_timeout_20s</item>
+        <item>@string/backlight_timeout_30s</item>
+    </string-array>
+
+    <string-array name="backlight_timeout_values">
+        <item>0</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>30000</item>
+    </string-array>
+
+    <!-- Ambient music -->
+    <string-array name="force_ambient_for_media_entries">
+        <item>@string/force_ambient_for_media_off</item>
+        <item>@string/force_ambient_for_media_on</item>
+        <item>@string/force_ambient_for_media_on_forced</item>
+        <item>@string/force_ambient_for_media_on_forced_clean</item>
+    </string-array>
+
+    <string-array name="force_ambient_for_media_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="style_entries" translatable="false">
+        <item>@string/style_global_entry_automatic</item>
+        <item>@string/style_global_entry_time</item>
+        <item>@string/style_global_entry_light</item>
+        <item>@string/style_global_entry_dark</item>
+        <item>@string/style_global_entry_black</item>
+    </string-array>
+
+    <!-- Global style values -->
+    <string-array name="style_values" translatable="false">
+        <item>0</item> <!-- Based on wallpaper -->
+        <item>1</item> <!-- Based on LiveDisplay -->
+        <item>2</item> <!-- Force light -->
+        <item>3</item> <!-- Force dark -->
+        <item>4</item> <!-- Force black -->
+    </string-array>
+
+    <!-- Supported accent packages -->
+    <string-array name="accent_packages" translatable="false">
+        <item>mx.mdroid.accent.red</item>
+        <item>mx.mdroid.accent.pink</item>
+        <item>mx.mdroid.accent.purple</item>
+        <item>mx.mdroid.accent.blue</item>
+        <item>mx.mdroid.accent.cyan</item>
+        <item>mx.mdroid.accent.pixel</item>
+        <item>mx.mdroid.accent.green</item>
+        <item>mx.mdroid.accent.orange</item>
+        <item>mx.mdroid.accent.yellow</item>
+        <item>mx.mdroid.accent.brown</item>
+        <item>mx.mdroid.accent.black</item>
+        <item>mx.mdroid.accent.white</item>
+    </string-array>
+
+     <!-- Ticker mode -->
+    <string-array name="ticker_mode_entries">
+        <item>@string/ticker_disabled</item>
+        <item>@string/ticker_enabled</item>
+        <item>@string/ticker_media_enabled</item>
+    </string-array>
+
+    <string-array name="ticker_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Quick Pulldown -->
+    <string-array name="quick_pulldown_entries" translatable="false">
+        <item>@string/quick_pulldown_off</item>
+        <item>@string/quick_pulldown_right</item>
+        <item>@string/quick_pulldown_left</item>
+        <item>@string/quick_pulldown_always</item>
+    </string-array>
+
+    <string-array name="quick_pulldown_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>
