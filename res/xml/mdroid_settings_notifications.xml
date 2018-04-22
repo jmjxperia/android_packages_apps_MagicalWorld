@@ -21,6 +21,11 @@
         android:title="@string/heads_up_notifications"
         android:fragment="mx.mdroid.magicalworld.fragments.HeadsUpSettings" />
 
+    <com.android.settings.elixir.SystemSettingSwitchPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/force_expanded_notifications_title"
+        android:summary="@string/force_expanded_notifications_summary" />
+
     <PreferenceCategory
         android:key="ticker_notifications_category"
         android:title="@string/ticker_screen_title">
