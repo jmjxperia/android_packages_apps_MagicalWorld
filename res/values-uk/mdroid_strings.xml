@@ -371,4 +371,8 @@
     <string name="weather_config_title">Налаштування сервісу</string>
     <string name="weather_icon_pack_title">Стиль іконок</string>
 
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Примусово розгортати сповіщення</string>
+    <string name="force_expanded_notifications_summary">Доступно тільки для додатків, які підтримують розширені сповіщення</string>
+
 </resources>
