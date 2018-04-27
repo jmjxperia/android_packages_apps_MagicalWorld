@@ -21,7 +21,7 @@
         android:title="@string/heads_up_notifications"
         android:fragment="mx.mdroid.magicalworld.fragments.HeadsUpSettings" />
 
-    <com.android.settings.elixir.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="force_expanded_notifications"
         android:title="@string/force_expanded_notifications_title"
         android:summary="@string/force_expanded_notifications_summary" />
