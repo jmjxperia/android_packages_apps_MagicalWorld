@@ -381,4 +381,6 @@
 
     <string name="screenshot_delay_title">Задержка скриншота</string>
 
+    <string name="units_ms">мс</string>
+
 </resources>
