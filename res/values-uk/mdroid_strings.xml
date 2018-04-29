@@ -375,6 +375,10 @@
     <string name="force_expanded_notifications_title">Примусово розгортати сповіщення</string>
     <string name="force_expanded_notifications_summary">Доступно тільки для додатків, які підтримують розширені сповіщення</string>
 
+    <!-- Disable QS on secure Lockscreen -->
+    <string name="lockscreen_qs_disabled_title">Швидкі налаштування на екрані блокування</string>
+    <string name="lockscreen_qs_disabled_summary">Вимкнути панель швидких налаштувань на захищеному екрані блокування</string>
+
     <string name="screenshot_delay_title">Затримка скріншота</string>
 
 </resources>
