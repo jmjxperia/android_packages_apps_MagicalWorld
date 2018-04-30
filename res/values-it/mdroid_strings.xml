@@ -84,7 +84,7 @@
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Traffico di rete</string>
     <string name="network_traffic_state_summary">Mostra l\'attività di rete nella barra di stato</string>
-    <string name="network_traffic_autohide_threshold_title">Nascondi automaticamente alla soglia per inattività (KB/s)</string>
+    <string name="network_traffic_autohide_threshold_title">Nascondi automaticamente alla soglia per inattività</string>
 
     <!-- Three finger gesture  -->
     <string name="three_finger_gesture_title">Scorri per uno screenshot</string>

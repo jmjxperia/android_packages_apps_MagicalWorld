@@ -86,7 +86,7 @@
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Индикатор сетевого трафика</string>
     <string name="network_traffic_state_summary">Показывать скорость передачи данных</string>
-    <string name="network_traffic_autohide_threshold_title">Порог неактивности (КБ/с)</string>
+    <string name="network_traffic_autohide_threshold_title">Порог неактивности</string>
 
     <!-- Three finger gesture  -->
     <string name="three_finger_gesture_title">Снимок экрана свайпом</string>
@@ -382,5 +382,6 @@
     <string name="screenshot_delay_title">Задержка скриншота</string>
 
     <string name="units_ms">мс</string>
+    <string name="units_kbps">КБ/с</string>
 
 </resources>

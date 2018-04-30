@@ -86,7 +86,7 @@
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Мережевий трафік</string>
     <string name="network_traffic_state_summary">Показувати мережеву активність в рядку стану</string>
-    <string name="network_traffic_autohide_threshold_title">Поріг приховування мережевого трафіку (КБ/с)</string>
+    <string name="network_traffic_autohide_threshold_title">Поріг приховування мережевого трафіку</string>
 
     <!-- Three finger gesture  -->
     <string name="three_finger_gesture_title">Знімок екрану свайпом</string>
@@ -382,5 +382,6 @@
     <string name="screenshot_delay_title">Затримка скріншота</string>
 
     <string name="units_ms">мс</string>
+    <string name="units_kbps">КБ/с</string>
 
 </resources>
