@@ -613,4 +613,11 @@
     <string name="pref_scrollingcache_default_disable">Выключить по умолчанию</string>
     <string name="pref_scrollingcache_force_disable">Выключить принудительно</string>
 
+    <!-- Chooser activity blacklist -->
+    <string name="chooser_activity_blacklist_title">Добавить в черный список</string>
+    <string name="chooser_activity_blacklist_summary">Приложения, чтобы не показывать при нажатии на кнопку Поделиться</string>
+    <string name="chooser_activity_blacklist_cat_title">Черный список</string>
+    <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
+    <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить его</string>
+
 </resources>

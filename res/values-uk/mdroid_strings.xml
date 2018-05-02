@@ -613,4 +613,11 @@
     <string name="pref_scrollingcache_default_disable">Вимкнути за замовчуванням</string>
     <string name="pref_scrollingcache_force_disable">Вимкнути примусово</string>
 
+    <!-- Chooser activity blacklist -->
+    <string name="chooser_activity_blacklist_title">Чорний список активності</string>
+    <string name="chooser_activity_blacklist_summary">Додатки, що не слід показувати при натисканні кнопки \"Поділитися\"</string>
+    <string name="chooser_activity_blacklist_cat_title">Чорний список</string>
+    <string name="chooser_activity_blacklist_pref_title">Додати додаток</string>
+    <string name="chooser_activity_blacklist_pref_summary">Натисніть тут, щоб додати, або натисніть на доданий додаток, щоб видалити його</string>
+
 </resources>

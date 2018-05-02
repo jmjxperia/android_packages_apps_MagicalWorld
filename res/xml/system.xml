@@ -101,6 +101,13 @@
         android:entryValues="@array/values_scrollingcache" />
 
     <Preference
+        android:key="chooser_activity_blacklist"
+        android:fragment="mx.mdroid.magicalworld.fragments.ChooserActivityBlacklist"
+        android:title="@string/chooser_activity_blacklist_title"
+        android:summary="@string/chooser_activity_blacklist_summary"
+        android:persistent="false" />
+
+    <Preference
         android:title="@string/log_it_title"
         android:key="logit_section"
         android:summary="@string/log_it_summary"
