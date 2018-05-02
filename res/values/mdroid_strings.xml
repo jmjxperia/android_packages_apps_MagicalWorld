@@ -381,7 +381,6 @@
 
     <string name="screenshot_delay_title">Screenshot delay</string>
 
-    <string name="units_ms">ms</string>
     <string name="units_kbps">KB/s</string>
 
 </resources>

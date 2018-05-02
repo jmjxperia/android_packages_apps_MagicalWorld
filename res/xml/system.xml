@@ -78,6 +78,6 @@
         settings:min="100"
         settings:interval="100"
         android:defaultValue="1500"
-        settings:units="@string/units_ms"/>
+        settings:units="ms"/>
 
 </PreferenceScreen>
