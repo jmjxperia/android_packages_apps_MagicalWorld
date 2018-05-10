@@ -397,4 +397,8 @@
     <string name="sensor_block_title">Блокування датчиків попакетно</string>
     <string name="sensor_block_summary">Заблокувати доступ до датчиків для деяких додатків для економії заряда батареї.</string>
 
+    <!-- Data Disabled Icon -->
+    <string name="data_disabled_icon_title">Відображати іконку вимкнених даних</string>
+    <string name="data_disabled_icon_summary">Відображення хрестика поруч з рівнем сигналу, коли дані вимкнуто</string>
+
 </resources>

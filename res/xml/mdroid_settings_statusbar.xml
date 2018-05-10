@@ -48,6 +48,12 @@
         android:defaultValue="false" />
 
     <com.android.settings.mdroid.SystemSettingSwitchPreference
+        android:key="data_disabled_icon"
+        android:title="@string/data_disabled_icon_title"
+        android:summary="@string/data_disabled_icon_summary"
+        android:defaultValue="true"/>
+
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="network_traffic_state"
         android:title="@string/network_traffic_state_title"
         android:summary="@string/network_traffic_state_summary"
