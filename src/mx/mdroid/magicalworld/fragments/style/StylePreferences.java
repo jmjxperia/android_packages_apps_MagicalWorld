@@ -274,6 +274,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
                   intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                   intent.putExtra(SettingsDrawerActivity.EXTRA_SHOW_MENU, true);
                   getContext().startActivity(intent);
+                  finish();
                   Toast.makeText(getContext(), R.string.theme_applied_toast, Toast.LENGTH_SHORT).show();
               }
         }, 2000);
