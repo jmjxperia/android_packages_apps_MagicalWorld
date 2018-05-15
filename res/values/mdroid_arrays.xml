@@ -447,4 +447,15 @@
         <item>1200000</item>
     </string-array>
 
+    <!-- Log it -->
+    <string-array name="log_it_share_type_entries" translatable="false">
+        <item>@string/log_it_share_type_zip</item>
+        <item>@string/log_it_share_type_haste</item>
+    </string-array>
+
+    <string-array name="log_it_share_type_values" translatable="false">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
 </resources>

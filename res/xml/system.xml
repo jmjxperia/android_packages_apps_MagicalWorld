@@ -86,6 +86,12 @@
         android:entries="@array/ringtone_focus_mode_entries"
         android:entryValues="@array/ringtone_focus_mode_values" />
 
+    <Preference
+        android:title="@string/log_it_title"
+        android:key="logit_section"
+        android:summary="@string/log_it_summary"
+        android:fragment="mx.mdroid.magicalworld.external.LogIt" />
+
     <PreferenceCategory
         android:key="blocker_options"
         android:title="@string/blocker_category" >

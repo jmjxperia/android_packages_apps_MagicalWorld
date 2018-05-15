@@ -537,4 +537,26 @@
     <string name="notification_light_settings">Індикатор сповіщень</string>
     <string name="battery_light_settings">Індикатор батареї</string>
 
+    <!-- Log it -->
+    <string name="log_it_title">Залогуй це</string>
+    <string name="log_it_summary">Відправка logcat, dmesg або kmesg для кращої підтримки. Переконайтеся, що на пристрої присутній root.</string>
+
+    <string name="logcat_title">Logcat</string>
+    <string name="kmesg_title">Kmesg</string>
+    <string name="dmesg_title">Dmesg</string>
+    <string name="log_it_now_title">Почати</string>
+    <string name="log_it_dialog_title">Запис логів завершений</string>
+    <string name="logcat_warning">Все готово, тепер відправте логи.</string>
+    <string name="share_title">Відправити</string>
+    <string name="log_it_share_subject">Логи MiracleDROID</string>
+    <string name="log_it_now_summary">Дочекайтеся завершення запису логів</string>
+    <string name="log_it_logs_in_progress">Логи створені&#8230;</string>
+    <string name="log_it_share_type_title">Метод відправки</string>
+    <string name="log_it_share_type_zip">ZIP-Файл</string>
+    <string name="log_it_share_type_haste">Завантажити на Hastebin</string>
+    <string name="log_it_share_via">Відправити через</string>
+    <string name="cannot_get_su">Дію не виконано через відсутність прав суперкористувача</string>
+    <string name="log_it_alert_title">Що це таке?</string>
+    <string name="log_it_alert_faq">Можливо, ви зайшли сюди і задаєтесь питанням: \"Що, дідька лисого, все це і що я повинен відправити?\"\nЩо ж, ось трохи інформації про те, що ви можете відправити:\n\nLogcat: Це те, як Android виводить всі системні події, такі як помилки, збої або навіть інформацію про процес. що виконується. Ідеально підходить для збоїв і примусових закриттів.\n\nDmesg: Він виводить деякі з повідомлень ядра, але відфільтровує матеріал, який користувачам може бути нецікавий&#8230; якщо все ж цікаво \n\nKmesg: Це те ж саме, що і Dmesg, але без фільтрів, надаючи більше інформації про всі події ядра. Ідеально підходить для випадкових перезавантажень.</string>
+
 </resources>
