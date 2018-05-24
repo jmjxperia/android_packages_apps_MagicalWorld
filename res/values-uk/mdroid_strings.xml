@@ -471,4 +471,11 @@
 
     <string name="hardware_keys_brightness_category">Налаштування підсвічування</string>
 
+    <!-- Wallpaper tint -->
+    <string name="wallpaper_tint_power_menu">Забарвлення фону меню живлення</string>
+    <string name="wallpaper_tint_recents">Забарвлення фону меню «Нещодавні додатки»</string>
+    <string name="wallpaper_tint_keyguard">Забарвлення фону екрана блокування</string>
+    <string name="wallpaper_tint_notification_shade">Забарвлення затінення повідомлень</string>
+    <string name="wallpaper_tint_summary">Застосування забарвлення до фону на основі шпалер домашнього екрана</string>
+
 </resources>

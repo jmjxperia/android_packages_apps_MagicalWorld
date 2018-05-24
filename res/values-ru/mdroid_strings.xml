@@ -471,4 +471,11 @@
 
     <string name="hardware_keys_brightness_category">Настройки подсветки</string>
 
+    <!-- Wallpaper tint -->
+    <string name="wallpaper_tint_power_menu">Окраска фона меню питания</string>
+    <string name="wallpaper_tint_recents">Окраска фона меню \"Недавние приложения\"</string>
+    <string name="wallpaper_tint_keyguard">Окраска фона экрана блокировки</string>
+    <string name="wallpaper_tint_notification_shade">Окраска затенения уведомлений</string>
+    <string name="wallpaper_tint_summary">Применение окраски к фону на основе обоев домашнего экрана</string>
+
 </resources>
