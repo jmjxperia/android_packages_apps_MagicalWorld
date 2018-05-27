@@ -20,10 +20,12 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v7.preference.DropDownPreference;
 import android.support.v7.preference.Preference;
 
+import com.android.settings.mdroid.CustomSeekBarPreference;
 import com.android.settings.mdroid.SecureSettingSwitchPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -35,7 +37,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     private static final String TAG = "NetworkTrafficSettings";
 
     private DropDownPreference mNetTrafficMode;
-    private SecureSettingSwitchPreference mNetTrafficAutohide;
+    private CustomSeekBarPreference mNetTrafficAutohide;
     private DropDownPreference mNetTrafficUnits;
     private SecureSettingSwitchPreference mNetTrafficShowUnits;
 
@@ -52,8 +54,11 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
                 Settings.Secure.NETWORK_TRAFFIC_MODE, 0);
         mNetTrafficMode.setValue(String.valueOf(mode));
 
-        mNetTrafficAutohide = (SecureSettingSwitchPreference)
+        mNetTrafficAutohide = (CustomSeekBarPreference)
                 findPreference(Settings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
+        int mAutohideThreshold = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.NETWORK_TRAFFIC_AUTOHIDE, 0, UserHandle.USER_CURRENT);
+        mNetTrafficAutohide.setValue(mAutohideThreshold);
         mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
         mNetTrafficUnits = (DropDownPreference)
@@ -81,6 +86,10 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
             int units = Integer.valueOf((String) newValue);
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.NETWORK_TRAFFIC_UNITS, units);
+        } else if (preference == mNetTrafficAutohide) {
+            int value = (Integer) newValue;
+            Settings.Secure.putIntForUser(getActivity().getContentResolver(),
+                    Settings.Secure.NETWORK_TRAFFIC_AUTOHIDE, value, UserHandle.USER_CURRENT);
         }
         return true;
     }

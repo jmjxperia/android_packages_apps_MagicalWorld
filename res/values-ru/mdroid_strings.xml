@@ -490,7 +490,8 @@
     <string name="network_traffic_mode_down">Только входящий трафик</string>
     <string name="network_traffic_mode_all">Исходящий и входящий трафик</string>
     <string name="network_traffic_autohide">Автоскрытие</string>
-    <string name="network_traffic_autohide_summary">Скрывать индикатор трафика, когда нет активности</string>
+    <string name="network_traffic_autohide_kilobits">кб/с</string>
+    <string name="network_traffic_autohide_summary">Скрывать индикатор трафика, когда скорость ниже порога неактивности</string>
     <string name="network_traffic_units_title">Единицы измерения трафика</string>
     <string name="network_traffic_units_kilobits">Килобит в секунду (кбит/с)</string>
     <string name="network_traffic_units_megabits">Мегабит в секунду (Мбит/с)</string>

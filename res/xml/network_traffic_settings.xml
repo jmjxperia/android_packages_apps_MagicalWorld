@@ -23,11 +23,15 @@
         android:summary="%s"
         android:persistent="false" />
 
-    <com.android.settings.mdroid.SecureSettingSwitchPreference
+    <com.android.settings.mdroid.CustomSeekBarPreference
         android:key="network_traffic_autohide"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
-        android:defaultValue="false" />
+        android:max="10000"
+        settings:min="0"
+        settings:units="@string/network_traffic_autohide_kilobits"
+        settings:interval="10"
+        android:persistent="false" />
 
     <DropDownPreference
         android:key="network_traffic_units"
