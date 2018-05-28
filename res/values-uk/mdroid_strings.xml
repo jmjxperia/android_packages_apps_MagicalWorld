@@ -238,10 +238,10 @@
 
     <!-- QS rows and columns -->
     <string name="qs_rows_columns_title">Рядки і стовпці</string>
-    <string name="qs_rows_portrait_title">Кількість плиток у рядку (портрет.)</string>
-    <string name="qs_rows_landscape_title">Кількість плиток у рядку (альбом.)</string>
-    <string name="qs_columns_portrait_title">Кількість плиток у стовпці (портрет.)</string>
-    <string name="qs_columns_landscape_title">Кількість плиток у стовпці (альбом.)</string>
+    <string name="qs_rows_portrait_title">Кількість рядків (портрет.)</string>
+    <string name="qs_rows_landscape_title">Кількість рядків (альбом.)</string>
+    <string name="qs_columns_portrait_title">Кількість стовпців (портрет.)</string>
+    <string name="qs_columns_landscape_title">Кількість стовпців (альбом.)</string>
     <string name="qs_tile_title_visibility_title">Підписи плиток</string>
     <string name="qs_tile_title_visibility_summary">Відображати підписи плиток в панелі швидких налаштувань</string>
 
