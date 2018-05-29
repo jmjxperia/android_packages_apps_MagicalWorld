@@ -62,24 +62,6 @@
         android:summary="@string/enable_mtp_dirtyhack_summary"
         android:defaultValue="false" />
 
-    <PreferenceCategory
-        android:key="blocker_options"
-        android:title="@string/blocker_category" >
-
-        <Preference
-            android:key="wakelock_blocker"
-            android:fragment="mx.mdroid.magicalworld.fragments.WakeLockBlocker"
-            android:title="@string/wakelock_blocker_title"
-            android:summary="@string/wakelock_blocker_summary" />
-
-        <Preference
-            android:key="alarm_blocker"
-            android:fragment="mx.mdroid.magicalworld.fragments.AlarmBlocker"
-            android:title="@string/alarm_blocker"
-            android:summary="@string/alarm_blocker_summary" />
-
-    </PreferenceCategory>
-
     <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="sensor_block"
         android:title="@string/sensor_block_title"
@@ -103,5 +85,23 @@
         settings:interval="100"
         android:defaultValue="1500"
         settings:units="@string/units_ms"/>
+
+    <PreferenceCategory
+        android:key="blocker_options"
+        android:title="@string/blocker_category" >
+
+        <Preference
+            android:key="wakelock_blocker"
+            android:fragment="mx.mdroid.magicalworld.fragments.WakeLockBlocker"
+            android:title="@string/wakelock_blocker_title"
+            android:summary="@string/wakelock_blocker_summary" />
+
+        <Preference
+            android:key="alarm_blocker"
+            android:fragment="mx.mdroid.magicalworld.fragments.AlarmBlocker"
+            android:title="@string/alarm_blocker"
+            android:summary="@string/alarm_blocker_summary" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
