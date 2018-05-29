@@ -32,19 +32,13 @@
         android:summary="@string/global_actions_advanced_reboot_summary"
         android:defaultValue="true" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
-        android:key="three_finger_gesture"
-        android:title="@string/three_finger_gesture_title"
-        android:summary="@string/three_finger_gesture_summary"
-        android:defaultValue="false" />
-
-   <ListPreference
+    <ListPreference
         android:key="screen_off_animation"
         android:title="@string/screen_off_animation_title"
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values" />
 
-   <com.android.settings.mdroid.GlobalSettingSwitchPreference
+    <com.android.settings.mdroid.GlobalSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wakeup_when_plugged_unplugged_title"
         android:summary="@string/wakeup_when_plugged_unplugged_summary"

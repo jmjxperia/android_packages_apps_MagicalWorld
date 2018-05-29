@@ -34,12 +34,6 @@
         android:title="@string/unlock_scramble_pin_layout_title"
         android:summary="@string/unlock_scramble_pin_layout_summary"
         android:defaultValue="false" />
-    
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_anywhere"
-        android:title="@string/double_tap_lock_sleep_title"
-        android:summary="@string/double_tap_lock_sleep_summary"
-        android:defaultValue="false" />
 
     <com.android.settings.mdroid.SecureSettingSwitchPreference
         android:key="face_auto_unlock"
