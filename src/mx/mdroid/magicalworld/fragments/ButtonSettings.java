@@ -58,6 +58,7 @@ public class ButtonSettings extends ActionFragment implements
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
+    private static final String CATEGORY_HWKEYBRIGHTNESS = "hardware_keys_brightness";
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_MENU = "menu_key";
     private static final String CATEGORY_BACK = "back_key";
@@ -120,6 +121,7 @@ public class ButtonSettings extends ActionFragment implements
         }
 
         final PreferenceCategory hwkeyCat = (PreferenceCategory) prefSet.findPreference(CATEGORY_HWKEY);
+        final PreferenceCategory hwkeyBrightnessCat = (PreferenceCategory) prefSet.findPreference(CATEGORY_HWKEYBRIGHTNESS);
         final boolean needsNavbar = ActionUtils.hasNavbarByDefault(getActivity());
         mHwKeyDisable = (SwitchPreference) findPreference(HWKEY_DISABLE);
 
@@ -127,51 +129,59 @@ public class ButtonSettings extends ActionFragment implements
 
         if (needsNavbar){
             prefSet.removePreference(hwkeyCat);
-        }else{
+            prefSet.removePreference(hwkeyBrightnessCat);
+        } else {
             keysDisabled = Settings.Secure.getIntForUser(getContentResolver(),
                     Settings.Secure.HARDWARE_KEYS_DISABLE, 0,
                     UserHandle.USER_CURRENT);
             mHwKeyDisable.setChecked(keysDisabled != 0);
             mHwKeyDisable.setOnPreferenceChangeListener(this);
 
+            final boolean buttonBrightness = getResources().getBoolean(
+                    com.android.internal.R.bool.config_deviceHasButtonBrightness);
+
             final boolean variableBrightness = getResources().getBoolean(
                     com.android.internal.R.bool.config_deviceHasVariableButtonBrightness);
 
-            mBacklightTimeout =
-                    (ListPreference) findPreference(KEY_BACKLIGHT_TIMEOUT);
+            if (buttonBrightness) {
+                mBacklightTimeout =
+                        (ListPreference) findPreference(KEY_BACKLIGHT_TIMEOUT);
 
-            mButtonBrightness =
-                    (CustomSeekBarPreference) findPreference(KEY_BUTTON_BRIGHTNESS);
+                mButtonBrightness =
+                        (CustomSeekBarPreference) findPreference(KEY_BUTTON_BRIGHTNESS);
 
-            mButtonBrightness_sw =
-                    (SwitchPreference) findPreference(KEY_BUTTON_BRIGHTNESS_SW);
+                mButtonBrightness_sw =
+                        (SwitchPreference) findPreference(KEY_BUTTON_BRIGHTNESS_SW);
 
-            mButtonBacklightOnTouch =
-                    (SwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_ON_TOUCH);
+                mButtonBacklightOnTouch =
+                        (SwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_ON_TOUCH);
 
-            if (mBacklightTimeout != null) {
-                mBacklightTimeout.setOnPreferenceChangeListener(this);
-                int BacklightTimeout = Settings.System.getInt(getContentResolver(),
-                        Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5000);
-                mBacklightTimeout.setValue(Integer.toString(BacklightTimeout));
-                mBacklightTimeout.setSummary(mBacklightTimeout.getEntry());
-            }
+                if (mBacklightTimeout != null) {
+                    mBacklightTimeout.setOnPreferenceChangeListener(this);
+                    int BacklightTimeout = Settings.System.getInt(getContentResolver(),
+                            Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5000);
+                    mBacklightTimeout.setValue(Integer.toString(BacklightTimeout));
+                    mBacklightTimeout.setSummary(mBacklightTimeout.getEntry());
+                }
 
-            if (variableBrightness) {
-                hwkeyCat.removePreference(mButtonBrightness_sw);
-                if (mButtonBrightness != null) {
-                    int ButtonBrightness = Settings.System.getInt(getContentResolver(),
-                            Settings.System.BUTTON_BRIGHTNESS, 255);
-                    mButtonBrightness.setValue(ButtonBrightness / 1);
-                    mButtonBrightness.setOnPreferenceChangeListener(this);
+                if (variableBrightness) {
+                    hwkeyBrightnessCat.removePreference(mButtonBrightness_sw);
+                    if (mButtonBrightness != null) {
+                        int ButtonBrightness = Settings.System.getInt(getContentResolver(),
+                                Settings.System.BUTTON_BRIGHTNESS, 255);
+                        mButtonBrightness.setValue(ButtonBrightness / 1);
+                        mButtonBrightness.setOnPreferenceChangeListener(this);
+                    }
+                } else {
+                    hwkeyBrightnessCat.removePreference(mButtonBrightness);
+                    if (mButtonBrightness_sw != null) {
+                        mButtonBrightness_sw.setChecked((Settings.System.getInt(getContentResolver(),
+                                Settings.System.BUTTON_BRIGHTNESS, 1) == 1));
+                        mButtonBrightness_sw.setOnPreferenceChangeListener(this);
+                    }
                 }
             } else {
-                hwkeyCat.removePreference(mButtonBrightness);
-                if (mButtonBrightness_sw != null) {
-                    mButtonBrightness_sw.setChecked((Settings.System.getInt(getContentResolver(),
-                            Settings.System.BUTTON_BRIGHTNESS, 1) == 1));
-                    mButtonBrightness_sw.setOnPreferenceChangeListener(this);
-                }
+                prefSet.removePreference(hwkeyBrightnessCat);
             }
 
             if (keysDisabled == 1) {

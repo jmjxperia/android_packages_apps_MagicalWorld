@@ -101,6 +101,12 @@
             android:key="hardware_keys_disable"
             android:title="@string/hardware_keys_disable_title" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="hardware_keys_brightness"
+        android:title="@string/hardware_keys_brightness_category" >
+
         <mx.mdroid.magicalworld.preferences.CustomSeekBarPreference
             android:key="button_brightness"
             android:title="@string/button_brightness_title"
