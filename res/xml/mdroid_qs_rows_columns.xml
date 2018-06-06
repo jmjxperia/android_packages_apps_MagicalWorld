@@ -15,6 +15,14 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <mx.mdroid.magicalworld.preferences.CustomSeekBarPreference
+        android:key="sysui_qqs_count"
+        android:title="@string/sysui_qqs_count_title"
+        android:max="8"
+        settings:min="3"
+        settings:units=""
+        android:persistent="false" />
+
+    <mx.mdroid.magicalworld.preferences.CustomSeekBarPreference
         android:key="qs_rows_portrait"
         android:title="@string/qs_rows_portrait_title"
         android:max="5"

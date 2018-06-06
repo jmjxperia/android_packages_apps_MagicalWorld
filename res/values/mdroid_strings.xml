@@ -235,6 +235,7 @@
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
     <string name="qs_tile_title_visibility_title">QS tile titles</string>
     <string name="qs_tile_title_visibility_summary">Show quick settings tiles titles</string>
+    <string name="sysui_qqs_count_title">Small tiles</string>
 
     <!-- Memory bar -->
     <string name="recents_show_membar_title">Memory bar</string>

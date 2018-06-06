@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.provider.Settings;
+import android.provider.Settings.Secure;
 
 import mx.mdroid.magicalworld.preferences.CustomSeekBarPreference;
 import com.android.internal.logging.nano.MetricsProto;
@@ -35,6 +36,7 @@ public class QsRowsColumns extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mQsRowsLand;
     private CustomSeekBarPreference mQsColumnsPort;
     private CustomSeekBarPreference mQsColumnsLand;
+    private CustomSeekBarPreference mSysuiQqsCount;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -65,6 +67,11 @@ public class QsRowsColumns extends SettingsPreferenceFragment implements
         mQsColumnsLand = (CustomSeekBarPreference) findPreference("qs_columns_landscape");
         mQsColumnsLand.setValue(value);
         mQsColumnsLand.setOnPreferenceChangeListener(this);
+
+        value = Settings.Secure.getInt(resolver, Settings.Secure.QQS_COUNT, 6);
+        mSysuiQqsCount = (CustomSeekBarPreference) findPreference("sysui_qqs_count");
+        mSysuiQqsCount.setValue(value);
+        mSysuiQqsCount.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -93,6 +100,11 @@ public class QsRowsColumns extends SettingsPreferenceFragment implements
             int val = (Integer) newValue;
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.QS_COLUMNS_LANDSCAPE, val, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mSysuiQqsCount) {
+            int val = (Integer) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                    Settings.Secure.QQS_COUNT, val, UserHandle.USER_CURRENT);
             return true;
         }
         return false;

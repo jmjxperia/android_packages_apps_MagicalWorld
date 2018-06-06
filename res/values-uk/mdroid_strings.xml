@@ -235,6 +235,7 @@
     <string name="qs_columns_landscape_title">Кількість стовпців (альбом.)</string>
     <string name="qs_tile_title_visibility_title">Підписи плиток</string>
     <string name="qs_tile_title_visibility_summary">Відображати підписи плиток в панелі швидких налаштувань</string>
+    <string name="sysui_qqs_count_title">Малі плитки</string>
 
     <!-- Memory bar -->
     <string name="recents_show_membar_title">Шкала використання ОЗП</string>

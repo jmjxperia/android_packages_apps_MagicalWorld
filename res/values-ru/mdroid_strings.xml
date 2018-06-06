@@ -235,6 +235,7 @@
     <string name="qs_columns_landscape_title">Количество столбцов (альбом.)</string>
     <string name="qs_tile_title_visibility_title">Подписи плиток</string>
     <string name="qs_tile_title_visibility_summary">Отображать подписи плиток в панели быстрых настроек</string>
+    <string name="sysui_qqs_count_title">Малые плитки</string>
 
     <!-- Memory bar -->
     <string name="recents_show_membar_title">Шкала использования ОЗУ</string>
