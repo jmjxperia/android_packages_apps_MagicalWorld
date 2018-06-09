@@ -505,4 +505,8 @@
     <string name="network_traffic_show_units">Показать единицы</string>
     <string name="network_traffic_show_units_summary">Отображать скорость передачи данных в строке состояния</string>
 
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Кнопка закрытия приложения</string>
+    <string name="notification_guts_kill_app_button_summary">Отображать кнопку закрытия приложения в уведомлениях по длительному нажатию</string>
+
 </resources>
