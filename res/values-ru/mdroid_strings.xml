@@ -575,4 +575,8 @@
     <string name="status_bar_battery_saver_color_title">Цвет режима энергосбережения</string>
     <string name="status_bar_battery_saver_color_summary">Примечание: Если режим энергосбережения уже включен, для задействования нового цвета, переключите режим энергосбержения!</string>
 
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Меню питания</string>
+    <string name="lockscreen_enable_power_menu_summary">Разрешить доступ к меню питания на защищенном экране блокировки</string>
+
 </resources>

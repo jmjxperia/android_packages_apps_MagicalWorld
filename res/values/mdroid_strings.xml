@@ -575,6 +575,10 @@
     <string name="status_bar_battery_saver_color_title">Battery saver color</string>
     <string name="status_bar_battery_saver_color_summary">Note: If battery saver already enabled, for new color to be effective, toggle battery saver!</string>
 
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lock screen</string>
+
 </resources>
 
 
