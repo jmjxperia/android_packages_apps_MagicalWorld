@@ -546,11 +546,12 @@
     <string name="dmesg_title">Dmesg</string>
     <string name="log_it_now_title">Почати</string>
     <string name="log_it_dialog_title">Запис логів завершений</string>
-    <string name="logcat_warning">Все готово, тепер відправте логи.</string>
+    <string name="logcat_warning">Все готово, тепер відправте логи нам.</string>
+    <string name="logcat_warning_unofficial">Все готово, тепер відправте логи... Гей, ви використовуєте неофіційну збірку, тому передайте логи тому, хто її зробив, перш ніж відправляти нам.</string>
     <string name="share_title">Відправити</string>
     <string name="log_it_share_subject">Логи MiracleDROID</string>
     <string name="log_it_now_summary">Дочекайтеся завершення запису логів</string>
-    <string name="log_it_logs_in_progress">Логи створені&#8230;</string>
+    <string name="log_it_logs_in_progress">Запис логів&#8230;</string>
     <string name="log_it_share_type_title">Метод відправки</string>
     <string name="log_it_share_type_zip">ZIP-Файл</string>
     <string name="log_it_share_type_haste">Завантажити на Hastebin</string>
