@@ -300,6 +300,9 @@
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Вибрация при распознавании отпечатка пальцев</string>
     <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальцев</string>
+     <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">Разблокировка отпечатком</string>
+    <string name="fp_unlock_keystore_summary">Разблокировать устройство после перезагрузки без PIN/Пароля/Граф. ключа\nПримечание: на свой страх и риск!</string>
 
     <!-- Quick pull down-->
     <string name="quick_pulldown_title">Быстрый доступ</string>
