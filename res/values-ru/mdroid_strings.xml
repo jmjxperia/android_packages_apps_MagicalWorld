@@ -537,6 +537,13 @@
     <string name="notification_light_settings">Индикатор уведомлений</string>
     <string name="battery_light_settings">Индикатор батареи</string>
 
+    <!-- Blink flashlight for incoming calls -->
+    <string name="flashlight_on_call_title">Мигать вспышкой при вызове</string>
+    <string name="flashlight_on_call_disabled">Отключено</string>
+    <string name="flashlight_on_call_not_dnd">Только в режиме звонка</string>
+    <string name="flashlight_on_call_dnd">Только в режиме \"Не беспокоить\"</string>
+    <string name="flashlight_on_call_always">Всегда</string>
+
     <!-- Log it -->
     <string name="log_it_title">Залогируй это</string>
     <string name="log_it_summary">Отправка logcat, dmesg или kmesg для лучшей поддержки. Убедитесь, что на устройстве присутствует root.</string>

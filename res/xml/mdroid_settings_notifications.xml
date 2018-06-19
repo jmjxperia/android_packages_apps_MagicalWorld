@@ -62,6 +62,13 @@
             android:fragment="com.android.settings.applications.NotificationApps"
             android:title="@string/notification_light_settings" />
 
+        <!-- Flashlight on incoming calls -->
+        <ListPreference
+            android:key="flashlight_on_call"
+            android:title="@string/flashlight_on_call_title"
+            android:entries="@array/flashlight_on_call_entries"
+            android:entryValues="@array/flashlight_on_call_values" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

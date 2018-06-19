@@ -537,6 +537,13 @@
     <string name="notification_light_settings">Notifications light</string>
     <string name="battery_light_settings">Battery light</string>
 
+    <!-- Blink flashlight for incoming calls -->
+    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
+    <string name="flashlight_on_call_disabled">Disabled</string>
+    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
+    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
+    <string name="flashlight_on_call_always">Always blink flashlight</string>
+
     <!-- Log it -->
     <string name="log_it_title">Log it</string>
     <string name="log_it_summary">Send a logcat, a dmesg or a kmesg for a better support. Just be sure to be rooted.</string>
