@@ -23,6 +23,14 @@
         android:summary="%s"
         android:persistent="false" />
 
+    <DropDownPreference
+        android:key="network_traffic_frequency"
+        android:title="@string/network_traffic_frequency_title"
+        android:entries="@array/network_traffic_frequency_entries"
+        android:entryValues="@array/network_traffic_frequency_values"
+        android:summary="%s"
+        android:persistent="false" />
+
     <com.android.settings.mdroid.CustomSeekBarPreference
         android:key="network_traffic_autohide"
         android:title="@string/network_traffic_autohide"

@@ -39,6 +39,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     private DropDownPreference mNetTrafficMode;
     private CustomSeekBarPreference mNetTrafficAutohide;
     private DropDownPreference mNetTrafficUnits;
+    private DropDownPreference mNetTrafficFrequency;
     private SecureSettingSwitchPreference mNetTrafficShowUnits;
 
     @Override
@@ -53,6 +54,13 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         int mode = Settings.Secure.getInt(resolver,
                 Settings.Secure.NETWORK_TRAFFIC_MODE, 0);
         mNetTrafficMode.setValue(String.valueOf(mode));
+
+        mNetTrafficFrequency = (DropDownPreference)
+                findPreference(Settings.Secure.NETWORK_TRAFFIC_FREQUENCY);
+        mNetTrafficFrequency.setOnPreferenceChangeListener(this);
+        int frequency = Settings.Secure.getInt(resolver,
+                Settings.Secure.NETWORK_TRAFFIC_FREQUENCY, /* 1000 ms */ 1000);
+        mNetTrafficFrequency.setValue(String.valueOf(frequency));
 
         mNetTrafficAutohide = (CustomSeekBarPreference)
                 findPreference(Settings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
@@ -82,6 +90,10 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.NETWORK_TRAFFIC_MODE, mode);
             updateEnabledStates(mode);
+        } else if (preference == mNetTrafficFrequency) {
+            int frequency = Integer.valueOf((String) newValue);
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.NETWORK_TRAFFIC_FREQUENCY, frequency);
         } else if (preference == mNetTrafficUnits) {
             int units = Integer.valueOf((String) newValue);
             Settings.Secure.putInt(getActivity().getContentResolver(),
@@ -96,6 +108,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
     private void updateEnabledStates(int mode) {
         final boolean enabled = mode != 0;
+        mNetTrafficFrequency.setEnabled(enabled);
         mNetTrafficAutohide.setEnabled(enabled);
         mNetTrafficUnits.setEnabled(enabled);
         mNetTrafficShowUnits.setEnabled(enabled);

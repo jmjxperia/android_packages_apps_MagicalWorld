@@ -492,6 +492,11 @@
     <string name="network_traffic_autohide">Автоприховування</string>
     <string name="network_traffic_autohide_kilobits">кб/с</string>
     <string name="network_traffic_autohide_summary">Приховувати індикатор трафіку, коли швидкість нижче порогу неактивності</string>
+    <string name="network_traffic_frequency_title">Частота оновлення</string>
+    <string name="network_traffic_frequency_500">500 мс</string>
+    <string name="network_traffic_frequency_1000">1000 мс</string>
+    <string name="network_traffic_frequency_1500">1500 мс</string>
+    <string name="network_traffic_frequency_2000">2000 мс</string>
     <string name="network_traffic_units_title">Одиниці виміру трафіку</string>
     <string name="network_traffic_units_kilobits">Кілобіт в секунду (кбіт/с)</string>
     <string name="network_traffic_units_megabits">Мегабіт в секунду (Мбіт/с)</string>
