@@ -35,10 +35,10 @@
         android:key="network_traffic_autohide"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
-        android:max="10000"
+        android:max="1000"
         settings:min="0"
         settings:units="@string/network_traffic_autohide_kilobits"
-        settings:interval="10"
+        settings:interval="5"
         android:persistent="false" />
 
     <DropDownPreference

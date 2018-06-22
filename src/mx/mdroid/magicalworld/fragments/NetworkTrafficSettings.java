@@ -65,7 +65,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         mNetTrafficAutohide = (CustomSeekBarPreference)
                 findPreference(Settings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
         int mAutohideThreshold = Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.NETWORK_TRAFFIC_AUTOHIDE, 0, UserHandle.USER_CURRENT);
+                Settings.Secure.NETWORK_TRAFFIC_AUTOHIDE, /* 10 kbps */ 10, UserHandle.USER_CURRENT);
         mNetTrafficAutohide.setValue(mAutohideThreshold);
         mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
