@@ -542,6 +542,7 @@
     <string name="log_it_summary">Отправка logcat, dmesg или kmesg для лучшей поддержки. Убедитесь, что на устройстве присутствует root.</string>
 
     <string name="logcat_title">Logcat</string>
+    <string name="logcat_radio_title">Radio log</string>
     <string name="kmesg_title">Kmesg</string>
     <string name="dmesg_title">Dmesg</string>
     <string name="log_it_now_title">Начать</string>
