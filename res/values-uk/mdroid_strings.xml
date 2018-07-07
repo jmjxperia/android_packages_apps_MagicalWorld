@@ -571,4 +571,8 @@
     <string name="qqs_scroll_title">Прокрутка малих плиток швидких налаштувань</string>
     <string name="qqs_scroll_summary">Дозволити прокрутку малих плиток швидких налаштувань</string>
 
+    <!-- Status bar - Battery saver color -->
+    <string name="status_bar_battery_saver_color_title">Колір режиму енергозбереження</string>
+    <string name="status_bar_battery_saver_color_summary">Примітка: Якщо режим енергозбереження вже ввімкненний. для застосування нового кольору. перемкніть режим енергозбереження!</string>
+
 </resources>

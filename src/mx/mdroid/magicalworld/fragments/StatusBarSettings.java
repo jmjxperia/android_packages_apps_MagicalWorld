@@ -34,8 +34,13 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
+
+    private static final String STATUS_BAR_BATTERY_SAVER_COLOR = "status_bar_battery_saver_color";
+    private ColorPickerPreference mBatterySaverColor;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -44,10 +49,24 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.mdroid_settings_statusbar);
 
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        int batterySaverColor = Settings.Secure.getInt(resolver,
+                Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, 0xfff4511e);
+        mBatterySaverColor = (ColorPickerPreference) findPreference(STATUS_BAR_BATTERY_SAVER_COLOR);
+        mBatterySaverColor.setNewPreviewColor(batterySaverColor);
+        mBatterySaverColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mBatterySaverColor) {
+            int color = ((Integer) objValue).intValue();
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, color);
+            return true;
+        } 
         return false;
     }
 
