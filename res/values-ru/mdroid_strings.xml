@@ -82,7 +82,7 @@
 
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Включить анимацию Pixel для панели навигации</string>
-    <string name="pixel_navbar_anim_summary">Необходим перезапуск SystemUI</string>
+    <string name="pixel_navbar_anim_summary">Включает анимацию Pixel для кнопки \"Домой\"</string>
 
     <!-- Three finger gesture  -->
     <string name="three_finger_gesture_title">Снимок экрана свайпом</string>
