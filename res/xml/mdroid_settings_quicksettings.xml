@@ -68,12 +68,6 @@
         android:dependency="qs_show_brightness"
         android:defaultValue="false"/>
 
-    <com.android.settings.mdroid.SecureSettingSwitchPreference
-        android:key="lockscreen_qs_disabled"
-        android:title="@string/lockscreen_qs_disabled_title"
-        android:summary="@string/lockscreen_qs_disabled_summary"
-        android:defaultValue="false" />
-
     <com.android.settings.mdroid.CustomSeekBarPreference
         android:key="qs_panel_alpha"
         android:title="@string/qs_panel_alpha_title"

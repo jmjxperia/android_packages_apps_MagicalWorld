@@ -53,6 +53,12 @@
         android:summary="@string/unlock_quick_unlock_control_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.mdroid.SecureSettingSwitchPreference
+        android:key="lockscreen_qs_disabled"
+        android:title="@string/lockscreen_qs_disabled_title"
+        android:summary="@string/lockscreen_qs_disabled_summary"
+        android:defaultValue="false" />
+
     <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="lockscreen_media_metadata"
         android:title="@string/media_art_title"
