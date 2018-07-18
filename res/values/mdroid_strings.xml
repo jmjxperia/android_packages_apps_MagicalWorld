@@ -592,6 +592,7 @@
     <string name="ring_volume_option_title">Volume steps: Ringer</string>
     <string name="system_volume_option_title">Volume steps: System</string>
     <string name="call_volume_option_title">Volume steps: Voice Call</string>
+    <string name="volume_steps_reset">Reset</string>
 
 </resources>
 

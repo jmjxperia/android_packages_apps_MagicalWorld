@@ -43,6 +43,8 @@ import com.android.settings.SettingsPreferenceFragment;
 public class VolumeSteps extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "VolumeSteps";
+    private static final String VOLUME_STEP_DEFAULTS = "volume_step_defaults";
+    private static final String FIRST_RUN_KEY = "first_run";
 
     // base map of all preference keys and the associated stream
     private static final Map<String, Integer> volume_map = new HashMap<String, Integer>();
@@ -89,6 +91,12 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
             }
         }
 
+        // check prefs for initial run of this fragment
+        final boolean firstRun = checkForFirstRun();
+
+        // entries array isn't translatable ugh
+        final String defEntry = getString(R.string.volume_steps_reset);
+
         // initialize prefs: set defaults if first run, set listeners and update values
         for (String key : mAvailableKeys) {
             Preference pref = prefScreen.findPreference(key);
@@ -97,6 +105,24 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
             }
             final ListPreference listPref = (ListPreference) pref;
             int steps = mAudioManager.getStreamMaxVolume(volume_map.get(key));
+            if (firstRun) {
+                saveDefaultSteps(listPref, steps);
+            }
+            final int defSteps = getDefaultSteps(listPref);
+            CharSequence[] entries = new CharSequence[listPref.getEntries().length + 1];
+            CharSequence[] values = new CharSequence[listPref.getEntryValues().length + 1];
+
+            for (int i = 0; i < entries.length; i++) {
+                if (i == 0) {
+                    entries[i] = defEntry;
+                    values[i] = String.valueOf(defSteps);
+                    continue;
+                }
+                entries[i] = listPref.getEntries()[i - 1];
+                values[i] = listPref.getEntryValues()[i - 1];
+            }
+            listPref.setEntries(entries);
+            listPref.setEntryValues(values);
             updateVolumeStepPrefs(listPref, steps);
             listPref.setOnPreferenceChangeListener(this);
         }
@@ -114,16 +140,41 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
     public int getMetricsCategory() {
         return MetricsEvent.MAGICAL_WORLD;
     }
-    
-        private int getDefaultSteps(Preference pref) {
+
+    private SharedPreferences getDefaultStepsPrefs() {
+        return getActivity().getSharedPreferences(VOLUME_STEP_DEFAULTS,
+                Context.MODE_PRIVATE);
+    }
+
+    // test for initial run of this fragment
+    private boolean checkForFirstRun() {
+        String isFirstRun = getDefaultStepsPrefs().getString(FIRST_RUN_KEY, null);
+        if (isFirstRun == null) {
+            getDefaultStepsPrefs().edit().putString(FIRST_RUN_KEY, "first_run_initialized").commit();
+            return true;
+        }
+        return false;
+    }
+
+    private int getDefaultSteps(Preference pref) {
         if (pref == null || !(pref instanceof ListPreference)) {
             // unlikely
             return -1;
         }
         String key = pref.getKey();
-        return mAudioManager.getDefaultStreamMaxVolume(volume_map.get(key));
+        String value = getDefaultStepsPrefs().getString(key, null);
+        if (value == null) {
+            // unlikely
+            return -1;
+        }
+        return Integer.parseInt(value);
     }
 
+    // on the initial run, let's store true device defaults in sharedPrefs
+    private void saveDefaultSteps(Preference volPref, int defaultSteps) {
+        String key = volPref.getKey();
+        getDefaultStepsPrefs().edit().putString(key, String.valueOf(defaultSteps)).commit();
+    }
 
     private void updateVolumeStepPrefs(Preference pref, int steps) {
         if (pref == null || !(pref instanceof ListPreference)) {
