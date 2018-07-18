@@ -579,4 +579,18 @@
     <string name="lockscreen_enable_power_menu_title">Меню питания</string>
     <string name="lockscreen_enable_power_menu_summary">Разрешить доступ к меню питания на защищенном экране блокировки</string>
 
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Уровни громкости</string>
+    <string name="volume_steps_summary">Настройка доступных уровней громкости для различных звуков</string>
+    <string name="volume_steps_30">30 уровней</string>
+    <string name="volume_steps_15">15 уровней</string>
+    <string name="volume_steps_7">7 уровней</string>
+    <string name="volume_steps_5">5 уровней</string>
+    <string name="alarm_volume_option_title">Уровни громкости: Будильник</string>
+    <string name="media_volume_option_title">Уровни громкости: Музыка</string>
+    <string name="notification_volume_option_title">Уровни громкости: Уведомления</string>
+    <string name="ring_volume_option_title">Уровни громкости: Звонок</string>
+    <string name="system_volume_option_title">Уровни громкости: Система</string>
+    <string name="call_volume_option_title">Уровни громкости: Голосовой вызов</string>
+
 </resources>

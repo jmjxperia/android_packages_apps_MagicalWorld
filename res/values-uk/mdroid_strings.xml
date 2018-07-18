@@ -579,4 +579,18 @@
     <string name="lockscreen_enable_power_menu_title">Меню живлення</string>
     <string name="lockscreen_enable_power_menu_summary">Дозволити доступ до меню живлення на захищенному екрані блокування</string>
 
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Рівні гучності</string>
+    <string name="volume_steps_summary">Налаштування доступних рівнів гучності для різних звуків</string>
+    <string name="volume_steps_30">30 рівнів</string>
+    <string name="volume_steps_15">15 рівнів</string>
+    <string name="volume_steps_7">7 рівнів</string>
+    <string name="volume_steps_5">5 рівнів</string>
+    <string name="alarm_volume_option_title">УРівні гучності: Будильник</string>
+    <string name="media_volume_option_title">Рівні гучності: Музика</string>
+    <string name="notification_volume_option_title">Рівні гучності: Сповіщення</string>
+    <string name="ring_volume_option_title">Рівні гучності: Дзвінок</string>
+    <string name="system_volume_option_title">Рівні гучності: Система</string>
+    <string name="call_volume_option_title">Рівні гучності: Голосовий виклик</string>
+
 </resources>
