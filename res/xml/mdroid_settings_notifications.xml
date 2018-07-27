@@ -42,12 +42,6 @@
         android:title="@string/force_expanded_notifications_title"
         android:summary="@string/force_expanded_notifications_summary" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
-        android:key="wallpaper_notification_shade_wallpaper_tint"
-        android:title="@string/wallpaper_tint_notification_shade"
-        android:summary="@string/wallpaper_tint_summary"
-        android:defaultValue="true" />
-
     <PreferenceCategory
         android:key="light_category"
         android:title="@string/light_category">
