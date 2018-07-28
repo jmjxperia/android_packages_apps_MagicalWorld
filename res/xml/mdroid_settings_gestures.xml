@@ -51,12 +51,6 @@
         android:fragment="mx.mdroid.magicalworld.fragments.gestures.CarbonGesturesSettings" />
 
     <com.android.settings.mdroid.SystemSettingSwitchPreference
-        android:key="three_finger_gesture"
-        android:title="@string/three_finger_gesture_title"
-        android:summary="@string/three_finger_gesture_summary"
-        android:defaultValue="false" />
-
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="double_tap_sleep_anywhere"
         android:title="@string/double_tap_lock_sleep_title"
         android:summary="@string/double_tap_lock_sleep_summary"
