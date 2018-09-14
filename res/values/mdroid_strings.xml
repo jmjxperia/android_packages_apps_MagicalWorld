@@ -597,6 +597,9 @@
     <string name="smart_pulldown_dismissable">no dismissable</string>
     <string name="smart_pulldown_ongoing">no ongoing</string>
 
+    <string name="force_expanded_settings_title">Expand settings</string>
+    <string name="force_expanded_settings_summary">Expand all menu entries in settings by default</string>
+
 </resources>
 
 

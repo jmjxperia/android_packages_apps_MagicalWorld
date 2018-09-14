@@ -597,4 +597,7 @@
     <string name="smart_pulldown_dismissable">без удаляемых</string>
     <string name="smart_pulldown_ongoing">без постоянных</string>
 
+    <string name="force_expanded_settings_title">Разворачивать настройки</string>
+    <string name="force_expanded_settings_summary">По умолчанию разворачивать все пункты настроек</string>
+
 </resources>

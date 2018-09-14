@@ -62,6 +62,12 @@
         android:summary="@string/sensor_block_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
+        android:key="force_expanded_settings"
+        android:title="@string/force_expanded_settings_title"
+        android:summary="@string/force_expanded_settings_summary"
+        android:defaultValue="false" />
+
     <PreferenceScreen
         android:key="screenstate_category"
         android:title="@string/screen_state_toggles_title"

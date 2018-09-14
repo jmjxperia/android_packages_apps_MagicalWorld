@@ -597,4 +597,7 @@
     <string name="smart_pulldown_dismissable">без тих, що видаляються</string>
     <string name="smart_pulldown_ongoing">без постійних</string>
 
+    <string name="force_expanded_settings_title">Розгортати налаштування</string>
+    <string name="force_expanded_settings_summary">За замовчуванням розгортати всі пункти налаштувань</string>
+
 </resources>
