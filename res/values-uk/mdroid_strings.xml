@@ -631,4 +631,7 @@
     <string name="onthego_alpha_title">\"На ходу\" прозорість</string>
     <string name="onthego_alpha_summary">Значення прозорості</string>
 
+    <string name="max_ring_volume_in_pocket_title">Максимальна гучність дзвінка в кишені</string>
+    <string name="max_ring_volume_in_pocket_summary">Підвищення гучності дзвінка до максимального рівня, коли пристрій перебуває в кишені</string>
+
 </resources>

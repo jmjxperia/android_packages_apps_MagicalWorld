@@ -51,6 +51,13 @@
         android:defaultValue="false" />
 
     <com.android.settings.mdroid.SystemSettingSwitchPreference
+        android:key="max_ring_volume_in_pocket"
+        android:dependency="pocket_judge"
+        android:title="@string/max_ring_volume_in_pocket_title"
+        android:summary="@string/max_ring_volume_in_pocket_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="mtp_dirty_hack"
         android:title="@string/enable_mtp_dirtyhack_title"
         android:summary="@string/enable_mtp_dirtyhack_summary"

@@ -631,6 +631,9 @@
     <string name="onthego_alpha_title">On-The-Go Alpha</string>
     <string name="onthego_alpha_summary">Alpha value of the On-The-Go overlay</string>
 
+    <string name="max_ring_volume_in_pocket_title">Maximum ring volume in pocket</string>
+    <string name="max_ring_volume_in_pocket_summary">Increase ringtone volume to maximum level when device is in pocket</string>
+
 </resources>
 
 
