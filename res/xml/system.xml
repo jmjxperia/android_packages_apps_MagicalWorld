@@ -86,7 +86,7 @@
         android:title="@string/screen_state_toggles_title"
         android:fragment="mx.mdroid.magicalworld.fragments.ScreenStateToggles"/>
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSeekBarPreference
+    <mx.mdroid.magicalworld.preferences.CustomSeekBarPreference
         android:key="screenshot_delay"
         android:title="@string/screenshot_delay_title"
         android:max="10000"
