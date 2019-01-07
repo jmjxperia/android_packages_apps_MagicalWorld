@@ -16,7 +16,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.android.settings.mdroid.SystemSettingListPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingListPreference
         android:defaultValue="0"
         android:entries="@array/style_entries"
         android:entryValues="@array/style_values"

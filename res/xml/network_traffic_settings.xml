@@ -31,7 +31,7 @@
         android:summary="%s"
         android:persistent="false" />
 
-    <com.android.settings.mdroid.CustomSeekBarPreference
+    <mx.mdroid.magicalworld.preferences.CustomSeekBarPreference
         android:key="network_traffic_autohide"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
@@ -49,7 +49,7 @@
         android:summary="%s"
         android:persistent="false" />
 
-    <com.android.settings.mdroid.SecureSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SecureSettingSwitchPreference
         android:key="network_traffic_show_units"
         android:title="@string/network_traffic_show_units"
         android:summary="@string/network_traffic_show_units_summary"

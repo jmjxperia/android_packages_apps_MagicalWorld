@@ -50,19 +50,19 @@
         android:summary="@string/carbon_gestures_summary"
         android:fragment="mx.mdroid.magicalworld.fragments.gestures.CarbonGesturesSettings" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_anywhere"
         android:title="@string/double_tap_lock_sleep_title"
         android:summary="@string/double_tap_lock_sleep_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
         android:title="@string/status_bar_toggle_brightness"
         android:summary="@string/status_bar_toggle_brightness_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_status_bar_sleep_title"
         android:summary="@string/double_tap_status_bar_sleep_summary"
