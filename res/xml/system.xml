@@ -26,7 +26,7 @@
         android:summary="@string/global_actions_summary"
         android:fragment="mx.mdroid.magicalworld.fragments.GlobalActionsSettings" />
 
-    <com.android.settings.mdroid.SecureSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SecureSettingSwitchPreference
         android:key="advanced_reboot"
         android:title="@string/global_actions_advanced_reboot_title"
         android:summary="@string/global_actions_advanced_reboot_summary"
@@ -38,44 +38,44 @@
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values" />
 
-    <com.android.settings.mdroid.GlobalSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.GlobalSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wakeup_when_plugged_unplugged_title"
         android:summary="@string/wakeup_when_plugged_unplugged_summary"
         android:defaultValue="true" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="pocket_judge"
         android:title="@string/pocket_judge_title"
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="max_ring_volume_in_pocket"
         android:dependency="pocket_judge"
         android:title="@string/max_ring_volume_in_pocket_title"
         android:summary="@string/max_ring_volume_in_pocket_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="mtp_dirty_hack"
         android:title="@string/enable_mtp_dirtyhack_title"
         android:summary="@string/enable_mtp_dirtyhack_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="sensor_block"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="force_expanded_settings"
         android:title="@string/force_expanded_settings_title"
         android:summary="@string/force_expanded_settings_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.mdroid.SystemSettingSwitchPreference
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
         android:summary="@string/toast_icon_summary"

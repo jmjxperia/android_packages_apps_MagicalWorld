@@ -36,7 +36,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-import com.android.settings.mdroid.CustomSeekBarPreference;
+import mx.mdroid.magicalworld.preferences.CustomSeekBarPreference;
 import mx.mdroid.magicalworld.fragments.HAFRAppChooserAdapter.AppItem;
 import mx.mdroid.magicalworld.fragments.HAFRAppChooserDialog;
 

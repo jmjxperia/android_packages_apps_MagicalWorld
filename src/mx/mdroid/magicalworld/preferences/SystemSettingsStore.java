@@ -69,4 +69,10 @@ public class SystemSettingsStore extends android.support.v7.preference.Preferenc
     public void putString(String key, String value) {
         Settings.System.putString(mContentResolver, key, value);
     }
+<<<<<<< HEAD
 }
+=======
+
+}
+
+>>>>>>> parent of d2bca62... Revert "Move custom preferences to MagicalWorld [2/2]"
