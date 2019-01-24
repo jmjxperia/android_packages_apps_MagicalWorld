@@ -63,13 +63,8 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         super(context, attrs, defStyleAttr, defStyleRes);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomSeekBarPreference);
-        mUnits = getAttributeStringValue(attrs, SETTINGS_NS, "units", "");
         try {
             mShowSign = a.getBoolean(R.styleable.CustomSeekBarPreference_showSign, mShowSign);
-            Integer id = a.getResourceId(R.styleable.CustomSeekBarPreference_units, 0);
-            if (id > 0) {
-                mUnits = context.getResources().getString(id);
-            }
             mContinuousUpdates = a.getBoolean(R.styleable.CustomSeekBarPreference_continuousUpdates, mContinuousUpdates);
         } finally {
             a.recycle();
@@ -82,6 +77,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         } catch (Exception e) {
             Log.e(TAG, "Invalid interval value", e);
         }
+        mUnits = getAttributeStringValue(attrs, SETTINGS_NS, "units", "");
         mMinValue = attrs.getAttributeIntValue(SETTINGS_NS, "min", mMinValue);
         mMaxValue = attrs.getAttributeIntValue(ANDROIDNS, "max", mMaxValue);
         if (mMaxValue < mMinValue)
