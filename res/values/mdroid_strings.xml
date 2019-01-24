@@ -634,12 +634,6 @@
     <string name="max_ring_volume_in_pocket_title">Maximum ring volume in pocket</string>
     <string name="max_ring_volume_in_pocket_summary">Increase ringtone volume to maximum level when device is in pocket</string>
 
-    <!-- Custom seekbar -->
-    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
-    <string name="custom_seekbar_default_value">by default</string>
-    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
-    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
-
 </resources>
 
 

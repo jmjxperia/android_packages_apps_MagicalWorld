@@ -634,10 +634,4 @@
     <string name="max_ring_volume_in_pocket_title">Максимальная громкость звонка в кармане</string>
     <string name="max_ring_volume_in_pocket_summary">Повышение громкости звонка до максимального уровня, когда устройство находится в кармане</string>
 
-    <!-- Custom seekbar -->
-    <string name="custom_seekbar_value">Значение: <xliff:g id="v">%s</xliff:g></string>
-    <string name="custom_seekbar_default_value">по умолчанию</string>
-    <string name="custom_seekbar_default_value_to_set">Значение по умолчанию: <xliff:g id="v">%s</xliff:g>\nДолгий тап для установки</string>
-    <string name="custom_seekbar_default_value_is_set">Значение по умолчанию установлено</string>
-
 </resources>
