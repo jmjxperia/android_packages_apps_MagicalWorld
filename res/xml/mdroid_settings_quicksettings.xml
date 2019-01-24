@@ -24,7 +24,7 @@
         android:title="@string/qs_rows_columns_title"/>
 
     <!-- QS scroller -->
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="qs_quickbar_scroll_enabled"
         android:title="@string/qqs_scroll_title"
         android:summary="@string/qqs_scroll_summary"
@@ -44,44 +44,44 @@
         android:entryValues="@array/smart_pulldown_values"
         android:persistent="false" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"
         android:summary="@string/qs_tile_title_visibility_summary"
         android:defaultValue="true" />
 
-    <mx.mdroid.magicalworld.preferences.SecureSettingSwitchPreference
+    <com.android.settings.mdroid.SecureSettingSwitchPreference
         android:key="quick_settings_vibrate"
         android:title="@string/quick_settings_vibrate_title"
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false"/>
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="qs_footer_warnings"
         android:title="@string/qs_footer_warnings_title"
         android:summary="@string/qs_footer_warnings_summary"
         android:defaultValue="true" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="qs_running_services_toggle"
         android:title="@string/qs_running_services_title"
         android:summary="@string/qs_running_services_summary"
         android:defaultValue="false" />
 
-    <mx.mdroid.magicalworld.preferences.SecureSettingSwitchPreference
+    <com.android.settings.mdroid.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_brightness_slider_title"
         android:summary="@string/qs_brightness_slider_summary"
         android:defaultValue="true"/>
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="qs_show_brightness_icon"
         android:title="@string/brightness_icon_title"
         android:summary="@string/brightness_icon_summary"
         android:dependency="qs_show_brightness"
         android:defaultValue="false"/>
 
-    <mx.mdroid.magicalworld.preferences.CustomSeekBarPreference
+    <com.android.settings.mdroid.CustomSeekBarPreference
         android:key="qs_panel_alpha"
         android:title="@string/qs_panel_alpha_title"
         android:max="255"

@@ -25,8 +25,8 @@ import android.provider.Settings;
 import android.support.v7.preference.DropDownPreference;
 import android.support.v7.preference.Preference;
 
-import mx.mdroid.magicalworld.preferences.CustomSeekBarPreference;
-import mx.mdroid.magicalworld.preferences.SecureSettingSwitchPreference;
+import com.android.settings.mdroid.CustomSeekBarPreference;
+import com.android.settings.mdroid.SecureSettingSwitchPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 

@@ -19,52 +19,52 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/global_actions_title" >
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="global_actions_power"
         android:title="@string/global_actions_power"
         android:defaultValue="true" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="global_actions_restart"
         android:title="@string/global_actions_restart"
         android:defaultValue="true" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="global_actions_screenshot"
         android:title="@string/global_actions_screenshot"
         android:defaultValue="false" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="global_actions_airplane"
         android:title="@string/global_actions_airplane"
         android:defaultValue="false" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="global_actions_settings"
         android:title="@string/global_actions_settings"
         android:defaultValue="false" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="global_actions_lockdown"
         android:title="@string/global_actions_lockdown"
         android:defaultValue="false" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="global_actions_flashlight"
         android:title="@string/global_actions_flashlight"
         android:defaultValue="false" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="global_actions_users"
         android:title="@string/global_actions_users"
         android:defaultValue="false" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="global_actions_onthego"
         android:title="@string/global_actions_onthego_title"
         android:defaultValue="false" />
 
-    <mx.mdroid.magicalworld.preferences.CustomSeekBarPreference
+    <com.android.settings.mdroid.CustomSeekBarPreference
         android:key="on_the_go_alpha"
         android:title="@string/onthego_alpha_title"
         android:summary="@string/onthego_alpha_summary"

@@ -12,14 +12,14 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <mx.mdroid.magicalworld.preferences.GlobalSettingSwitchPreference
+    <com.android.settings.mdroid.GlobalSettingSwitchPreference
             android:key="heads_up_notifications_enabled"
             android:title="@string/heads_up_notifications"
             android:summaryOn="@string/summary_heads_up_enabled"
             android:summaryOff="@string/summary_heads_up_disabled"
             android:defaultValue="true" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
             android:key="always_headsup_dialer"
             android:title="@string/always_headsup_dialer_title"
             android:summary="@string/always_headsup_dialer_summary"

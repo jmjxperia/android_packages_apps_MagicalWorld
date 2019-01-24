@@ -33,7 +33,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-import mx.mdroid.magicalworld.preferences.CustomSeekBarPreference;
+import com.android.settings.mdroid.CustomSeekBarPreference;
 
 public class GlobalActionsSettings extends SettingsPreferenceFragment implements
          Preference.OnPreferenceChangeListener {

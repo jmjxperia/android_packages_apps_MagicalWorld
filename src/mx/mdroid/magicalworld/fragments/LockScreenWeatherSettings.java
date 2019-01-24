@@ -39,7 +39,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.development.DevelopmentSettings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import mx.mdroid.magicalworld.preferences.CustomSeekBarPreference;
+import com.android.settings.mdroid.CustomSeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.List;

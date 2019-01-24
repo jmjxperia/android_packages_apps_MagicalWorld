@@ -24,7 +24,7 @@ import android.view.View;
 import java.util.List;
 import java.util.ArrayList;
 
-import mx.mdroid.magicalworld.preferences.CustomSeekBarPreference;
+import com.android.settings.mdroid.CustomSeekBarPreference;
 
 public class QuickSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {

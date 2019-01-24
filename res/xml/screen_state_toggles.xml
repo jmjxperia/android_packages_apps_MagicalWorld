@@ -50,13 +50,13 @@
         android:key="screen_state_toggles_mobile_key"
         android:title="@string/screen_state_toggles_mobile_title">
 
-        <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+        <com.android.settings.mdroid.SystemSettingSwitchPreference
             android:key="screen_state_toggles_twog"
             android:title="@string/screen_state_toggles_twog"
             android:summary="@string/screen_state_toggles_twog_summary"
             android:defaultValue="false"/>
 
-        <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+        <com.android.settings.mdroid.SystemSettingSwitchPreference
             android:key="screen_state_toggles_mobile_data"
             android:title="@string/screen_state_toggles_mobile_data"
             android:summary="@string/screen_state_toggles_mobile_data_summary"
@@ -68,7 +68,7 @@
         android:key="screen_state_toggles_location_key"
         android:title="@string/screen_state_toggles_location_title">
 
-        <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+        <com.android.settings.mdroid.SystemSettingSwitchPreference
             android:key="screen_state_toggles_gps"
             android:title="@string/screen_state_toggles_gps"
             android:summary="@string/screen_state_toggles_gps_summary"

@@ -15,7 +15,7 @@
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingIntListPreference
+    <com.android.settings.mdroid.SystemSettingIntListPreference
         android:key="notification_sound_vib_screen_on"
         android:entries="@array/notification_sound_vib_screen_on_entries"
         android:entryValues="@array/notification_sound_vib_screen_on_values"
@@ -24,7 +24,7 @@
         android:summary="%s"
         android:defaultValue="1" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingListPreference
+    <com.android.settings.mdroid.SystemSettingListPreference
         android:key="less_notification_sounds"
         android:title="@string/less_notification_sounds_title"
         android:summary="@string/less_notification_sounds_summary"
@@ -37,7 +37,7 @@
         android:title="@string/heads_up_notifications"
         android:fragment="mx.mdroid.magicalworld.fragments.HeadsUpSettings" />
 
-    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+    <com.android.settings.mdroid.SystemSettingSwitchPreference
         android:key="force_expanded_notifications"
         android:title="@string/force_expanded_notifications_title"
         android:summary="@string/force_expanded_notifications_summary" />
@@ -82,17 +82,17 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-        <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+        <com.android.settings.mdroid.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-        <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+        <com.android.settings.mdroid.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-        <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+        <com.android.settings.mdroid.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
